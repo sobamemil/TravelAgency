@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		577F94292681D1C20087678A /* AgencyNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577F94282681D1C20087678A /* AgencyNavigationView.swift */; };
 		577F942B2681D6A60087678A /* SelectableMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577F942A2681D6A60087678A /* SelectableMenuView.swift */; };
 		5799C5902681AD7E00D156E3 /* TravelAgencyTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5799C58F2681AD7E00D156E3 /* TravelAgencyTestApp.swift */; };
 		5799C5922681AD7E00D156E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5799C5912681AD7E00D156E3 /* ContentView.swift */; };
 		5799C5942681AD7F00D156E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5799C5932681AD7F00D156E3 /* Assets.xcassets */; };
 		5799C5972681AD7F00D156E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5799C5962681AD7F00D156E3 /* Preview Assets.xcassets */; };
+		57B335712682AA7E0021E645 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B335702682AA7E0021E645 /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		577F94282681D1C20087678A /* AgencyNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyNavigationView.swift; sourceTree = "<group>"; };
 		577F942A2681D6A60087678A /* SelectableMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableMenuView.swift; sourceTree = "<group>"; };
 		5799C58C2681AD7E00D156E3 /* TravelAgencyTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelAgencyTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5799C58F2681AD7E00D156E3 /* TravelAgencyTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelAgencyTestApp.swift; sourceTree = "<group>"; };
 		5799C5912681AD7E00D156E3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5799C5932681AD7F00D156E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5799C5962681AD7F00D156E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		57B335702682AA7E0021E645 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +57,8 @@
 			children = (
 				5799C58F2681AD7E00D156E3 /* TravelAgencyTestApp.swift */,
 				5799C5912681AD7E00D156E3 /* ContentView.swift */,
+				57B335702682AA7E0021E645 /* ListView.swift */,
 				577F942A2681D6A60087678A /* SelectableMenuView.swift */,
-				577F94282681D1C20087678A /* AgencyNavigationView.swift */,
 				5799C5932681AD7F00D156E3 /* Assets.xcassets */,
 				5799C5952681AD7F00D156E3 /* Preview Content */,
 			);
@@ -143,8 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				577F94292681D1C20087678A /* AgencyNavigationView.swift in Sources */,
 				5799C5922681AD7E00D156E3 /* ContentView.swift in Sources */,
+				57B335712682AA7E0021E645 /* ListView.swift in Sources */,
 				5799C5902681AD7E00D156E3 /* TravelAgencyTestApp.swift in Sources */,
 				577F942B2681D6A60087678A /* SelectableMenuView.swift in Sources */,
 			);

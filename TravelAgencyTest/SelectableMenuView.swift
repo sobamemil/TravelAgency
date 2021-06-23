@@ -13,8 +13,8 @@ struct MenuCreate: View {
     
     var body: some View {
         VStack {
-            Image(systemName: image).resizable().frame(width: 40, height: 40)
-            Text(name).font(.system(size: 20))
+            Image(systemName: image).resizable().frame(width: 30, height: 30).padding(.bottom, 5)
+            Text(name).font(.system(size: 15))
         } // VStack
         .frame(width: 100, height: 100)
     }
