@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5703618E26846E71009557B3 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703618D26846E71009557B3 /* SideMenuView.swift */; };
 		577F942B2681D6A60087678A /* SelectableMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577F942A2681D6A60087678A /* SelectableMenuView.swift */; };
 		5799C5902681AD7E00D156E3 /* TravelAgencyTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5799C58F2681AD7E00D156E3 /* TravelAgencyTestApp.swift */; };
 		5799C5922681AD7E00D156E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5799C5912681AD7E00D156E3 /* ContentView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5703618D26846E71009557B3 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 		577F942A2681D6A60087678A /* SelectableMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableMenuView.swift; sourceTree = "<group>"; };
 		5799C58C2681AD7E00D156E3 /* TravelAgencyTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelAgencyTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5799C58F2681AD7E00D156E3 /* TravelAgencyTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelAgencyTestApp.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			children = (
 				5799C58F2681AD7E00D156E3 /* TravelAgencyTestApp.swift */,
 				5799C5912681AD7E00D156E3 /* ContentView.swift */,
+				5703618D26846E71009557B3 /* SideMenuView.swift */,
 				57B335702682AA7E0021E645 /* ListView.swift */,
 				577F942A2681D6A60087678A /* SelectableMenuView.swift */,
 				5799C5932681AD7F00D156E3 /* Assets.xcassets */,
@@ -145,6 +148,7 @@
 			files = (
 				5799C5922681AD7E00D156E3 /* ContentView.swift in Sources */,
 				57B335712682AA7E0021E645 /* ListView.swift in Sources */,
+				5703618E26846E71009557B3 /* SideMenuView.swift in Sources */,
 				5799C5902681AD7E00D156E3 /* TravelAgencyTestApp.swift in Sources */,
 				577F942B2681D6A60087678A /* SelectableMenuView.swift in Sources */,
 			);
