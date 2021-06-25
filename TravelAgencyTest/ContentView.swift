@@ -18,7 +18,7 @@ struct ContentView: View {
     var body: some View {
         let drag = DragGesture()
             .onEnded { gesture in
-                if (gesture.translation.width < -100) {
+                if (gesture.translation.width < -70) {
                     withAnimation {
                         self.showMenu = false
                     }
@@ -35,34 +35,35 @@ struct ContentView: View {
 //                                    Image(systemName: "line.3.horizontal").foregroundColor(.gray).frame(alignment: .leading).font(.title)
 //                                } // NavigationLink
                                 
-                                Button(action: {
-                                    withAnimation{ self.showMenu = true }  }) {
-                                    Image(systemName: "line.3.horizontal").foregroundColor(.gray).frame(alignment: .leading).font(.title)
-                                }
-                                Spacer()
-
-                                Text("코리아여행사").font(.title)
-                                Spacer()
-
-                                NavigationLink(destination: Text("user 화면")) {
-                                    Image(systemName: "person").foregroundColor(.gray).font(.title)
-                                } // NavigationLink
+//                                Button(action: {
+//                                    withAnimation{ self.showMenu = true }  }) {
+//                                    Image(systemName: "line.3.horizontal").foregroundColor(.gray).frame(alignment: .leading).font(.title)
+//                                }
+//                                Spacer()
+//
+//                                Text("코리아여행사").font(.title)
+//                                Spacer()
+//
+//                                NavigationLink(destination: Text("user 화면")) {
+//                                    Image(systemName: "person").foregroundColor(.gray).font(.title)
+//                                } // NavigationLink
                             } // HStack
                             .padding(.horizontal, 20)
-                            .padding(.top, 10)
+                            //.padding(.top, 50)
                             // .background(Color.yellow)
-                            .navigationBarTitle("메인")
-                            .navigationBarHidden(self.isNavigationBarHidden)
-                            .onAppear {
-                                self.isNavigationBarHidden = true
-                            }
+//                            .navigationBarTitle("메인")
+//                            .navigationBarHidden(self.isNavigationBarHidden)
+//                            .onAppear {
+//                                self.isNavigationBarHidden = true
+//                            }
                             
                             Image("image_1").resizable().frame(width: geometry.size.width, height: geometry.size.height * 25)
                                 .padding(.bottom, 20)
                             SelectableMenuView()
                             MyDivider()
+
                             
-                            Spacer()
+                            // Spacer()
                         } // VStack
                         .frame(width: geometry.size.width)
                         .offset(x: self.showMenu ? geometry.size.width/2 : 0)
@@ -75,13 +76,30 @@ struct ContentView: View {
                         }
                         
                     } // ZStack
+                     .navigationBarTitle("코리아 여행사", displayMode: .inline)
+                     .navigationBarItems(leading: (
+                         Button(action: {
+                         withAnimation {
+                             self.showMenu.toggle()
+                         }
+                     }) {
+                         Image(systemName: "line.3.horizontal").foregroundColor(.gray).frame(alignment: .leading).font(.title)
+                         }
+                     ), trailing: (
+                        NavigationLink(destination: Text("user 화면")) {
+                            Image(systemName: "person").foregroundColor(.gray).font(.title)
+                        } // NavigationLink
+                     ))
                     .gesture(drag)
-                } // GeometryReader
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                     
                     
+                    
+                } // GeometryReader
             } // ScrollView
+            //.edgesIgnoringSafeArea(.all)
+
         } // NavigationView
-    }
+    } // view
 }
 
 struct MyDivider: View {
@@ -100,4 +118,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-    
