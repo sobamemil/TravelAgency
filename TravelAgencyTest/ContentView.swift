@@ -25,10 +25,10 @@ struct ContentView: View {
                 }
             }
 
-        NavigationView {
+        return NavigationView {
             ScrollView {
-                return GeometryReader { geometry in
-                    ZStack {
+                 GeometryReader { geometry in
+                     ZStack(alignment: .leading) {
                         VStack {
                             HStack {
 //                                NavigationLink(destination: ListView()) {
