@@ -74,7 +74,6 @@ struct ContentView: View {
                                 .frame(width: geometry.size.width/2)
                                 .transition(.move(edge: .leading))
                         }
-                        
                     } // ZStack
                      .navigationBarTitleDisplayMode(.inline)
                      .toolbar {
