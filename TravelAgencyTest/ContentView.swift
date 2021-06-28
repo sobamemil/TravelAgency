@@ -30,7 +30,7 @@ struct ContentView: View {
                  GeometryReader { geometry in
                      ZStack(alignment: .leading) {
                         VStack {
-                            HStack {
+//                            HStack {
 //                                NavigationLink(destination: ListView()) {
 //                                    Image(systemName: "line.3.horizontal").foregroundColor(.gray).frame(alignment: .leading).font(.title)
 //                                } // NavigationLink
@@ -47,8 +47,8 @@ struct ContentView: View {
 //                                NavigationLink(destination: Text("user 화면")) {
 //                                    Image(systemName: "person").foregroundColor(.gray).font(.title)
 //                                } // NavigationLink
-                            } // HStack
-                            .padding(.horizontal, 20)
+//                            } // HStack
+//                            .padding(.horizontal, 20)
                             //.padding(.top, 50)
                             // .background(Color.yellow)
 //                            .navigationBarTitle("메인")
@@ -57,7 +57,7 @@ struct ContentView: View {
 //                                self.isNavigationBarHidden = true
 //                            }
                             
-                            Image("image_1").resizable().frame(width: geometry.size.width, height: geometry.size.height * 25)
+                            Image("koreaTravelAgency").resizable().frame(width: geometry.size.width, height: geometry.size.height * 25)
                                 .padding(.bottom, 20)
                             SelectableMenuView()
                             MyDivider()
@@ -76,7 +76,13 @@ struct ContentView: View {
                         }
                         
                     } // ZStack
-                     .navigationBarTitle("코리아 여행사", displayMode: .inline)
+                     .navigationBarTitleDisplayMode(.inline)
+                     .toolbar {
+                         ToolbarItem() {
+                             Image("koreaTravelAgencyLogo").frame(width: geometry.size.width, height: 5, alignment: .center)
+                         }
+                     }
+//                     .navigationBarTitle("코리아 여행사", displayMode: .inline)
                      .navigationBarItems(leading: (
                          Button(action: {
                          withAnimation {
@@ -84,22 +90,20 @@ struct ContentView: View {
                          }
                      }) {
                          Image(systemName: "line.3.horizontal").foregroundColor(.gray).frame(alignment: .leading).font(.title)
-                         }
-                     ), trailing: (
+                     }), trailing: (
                         NavigationLink(destination: Text("user 화면")) {
                             Image(systemName: "person").foregroundColor(.gray).font(.title)
                         } // NavigationLink
                      ))
                     .gesture(drag)
-                     
-                    
-                    
                 } // GeometryReader
             } // ScrollView
             //.edgesIgnoringSafeArea(.all)
+            .preferredColorScheme(.light) // dark mode disable
 
         } // NavigationView
     } // view
+    
 }
 
 struct MyDivider: View {
@@ -115,6 +119,8 @@ struct MyDivider: View {
     
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+        }
     }
 }
