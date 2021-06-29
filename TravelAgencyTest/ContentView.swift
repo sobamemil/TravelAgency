@@ -107,11 +107,11 @@ struct ContentView: View {
 
 struct MyDivider: View {
     let color: Color = .green
-    let width: CGFloat = 10
+    let height: CGFloat = 10
     var body: some View {
         Rectangle()
             .fill(color)
-            .frame(height: width)
+            .frame(height: height)
             .edgesIgnoringSafeArea(.horizontal)
     }
 }
