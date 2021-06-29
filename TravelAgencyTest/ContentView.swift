@@ -60,8 +60,8 @@ struct ContentView: View {
                             Image("koreaTravelAgency").resizable().frame(width: geometry.size.width, height: geometry.size.height * 25)
                                 .padding(.bottom, 20)
                             SelectableMenuView()
+                            
                             MyDivider()
-
                             
                             // Spacer()
                         } // VStack
@@ -81,7 +81,6 @@ struct ContentView: View {
                              Image("koreaTravelAgencyLogo").resizable().frame(width: geometry.size.width / 2, height: geometry.size.height * 5, alignment: .center)
                          }
                      }
-//                     .navigationBarTitle("코리아 여행사", displayMode: .inline)
                      .navigationBarItems(leading: (
                          Button(action: {
                          withAnimation {
@@ -90,9 +89,10 @@ struct ContentView: View {
                      }) {
                          Image(systemName: "line.3.horizontal").foregroundColor(.gray).frame(alignment: .leading).font(.title)
                      }), trailing: (
-                        NavigationLink(destination: Text("user 화면")) {
+                        NavigationLink(destination: LoginView()) {
                          Image(systemName: "person").resizable().frame(width: geometry.size.width / 13, height: geometry.size.height * 2).foregroundColor(.gray).font(.title)
-                        } // NavigationLink
+                     }
+                            .navigationTitle("로그인") // NavigationLink
                      ))
                     .gesture(drag)
                 } // GeometryReader
