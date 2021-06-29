@@ -13,7 +13,7 @@ struct MenuCreate: View {
     
     var body: some View {
         VStack {
-            Image(image).resizable().frame(width: 30, height: 30).padding(.bottom, 5)
+            Image(image).resizable().frame(width: 35, height: 35).padding(.bottom, 3)
 //            Image(systemName: image).resizable().frame(width: 30, height: 30).padding(.bottom, 5)
             Text(name).font(.system(size: 15))
         } // VStack
@@ -25,25 +25,27 @@ struct SelectableMenuView: View {
     var body: some View {
         VStack {
             HStack {
-                MenuCreate(image: "airplane", name: "항공")
-                Spacer()
-                MenuCreate(image: "bus", name: "버스")
-                Spacer()
-                MenuCreate(image: "hotel", name: "숙박")
-                Spacer()
-                MenuCreate(image: "golf", name: "골프")
+                MenuCreate(image: "emergency", name: "긴급모객")
+                
+                MenuCreate(image: "globe", name: "국외")
+                
+                MenuCreate(image: "koreaMap", name: "국내")
+                
+                MenuCreate(image: "bus", name: "전세버스")
+                
             } // HStack
             .padding(.leading, 40)
             .padding(.trailing, 40)
             
             HStack {
-                MenuCreate(image: "koreaMap", name: "국내")
-                Spacer()
-                MenuCreate(image: "globe", name: "국외")
-                Spacer()
-                MenuCreate(image: "customTravel", name: "제작여행")
-                Spacer()
-                MenuCreate(image: "emergency", name: "긴급모객")
+                MenuCreate(image: "airplane", name: "항공")
+                
+                MenuCreate(image: "golf", name: "골프")
+
+                MenuCreate(image: "visa", name: "비자")
+                
+                MenuCreate(image: "customTravel", name: "맞춤여행")
+                
             } // HStack
             .padding(.leading, 40)
             .padding(.trailing, 40)

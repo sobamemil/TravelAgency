@@ -77,8 +77,8 @@ struct ContentView: View {
                     } // ZStack
                      .navigationBarTitleDisplayMode(.inline)
                      .toolbar {
-                         ToolbarItem() {
-                             Image("koreaTravelAgencyLogo").frame(width: geometry.size.width, height: 5, alignment: .center)
+                         ToolbarItem(placement: .principal) {
+                             Image("koreaTravelAgencyLogo").resizable().frame(width: geometry.size.width / 2, height: geometry.size.height * 5, alignment: .center)
                          }
                      }
 //                     .navigationBarTitle("코리아 여행사", displayMode: .inline)
@@ -91,7 +91,7 @@ struct ContentView: View {
                          Image(systemName: "line.3.horizontal").foregroundColor(.gray).frame(alignment: .leading).font(.title)
                      }), trailing: (
                         NavigationLink(destination: Text("user 화면")) {
-                            Image(systemName: "person").foregroundColor(.gray).font(.title)
+                         Image(systemName: "person").resizable().frame(width: geometry.size.width / 13, height: geometry.size.height * 2).foregroundColor(.gray).font(.title)
                         } // NavigationLink
                      ))
                     .gesture(drag)
@@ -106,7 +106,7 @@ struct ContentView: View {
 }
 
 struct MyDivider: View {
-    let color: Color = .gray
+    let color: Color = .green
     let width: CGFloat = 10
     var body: some View {
         Rectangle()
