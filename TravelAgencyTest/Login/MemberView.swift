@@ -10,6 +10,7 @@ import SwiftUI
 struct MemberView: View {
     @State private var id: String = ""
     @State private var pwd: String = ""
+    @State private var autoLogin: Bool = false 
     
     var body: some View {
         VStack {
@@ -28,11 +29,22 @@ struct MemberView: View {
                 .disableAutocorrection(true)
                 .textFieldStyle(.plain)
                 .frame(maxWidth: (UIScreen.main.bounds.maxX * 0.8) )
-                .frame(height: (UIScreen.main.bounds.maxY * 0.1) / 2 )
+                .frame(height: (UIScreen.main.bounds.maxY * 0.1) / 2)
                 .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray))
                 .padding(.bottom, 5)
 
+            Toggle(isOn: $autoLogin) {
+                Text("자동로그인")
+            }
+            .frame(maxWidth: (UIScreen.main.bounds.maxX * 0.8) )
+            
+//            if autoLogin {
+//                Text("autoLogin: On")
+//            } else if !autoLogin {
+//                Text("autoLogin: Off")
+//            }
 
+            
         }
         
         
