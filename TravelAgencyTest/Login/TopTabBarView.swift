@@ -20,14 +20,13 @@ struct TopTabBarView: View {
             
             Spacer()
 
-            
             TabBarButton(text: "비회원", isSelected: .constant(tabIndex == 1))
                 .onTapGesture { onButtonTapped(index: 1) }
                 
             Spacer()
         }
         .frame(width: UIScreen.main.bounds.maxX - 60, alignment: .center)
-        .border(width: 1, edges: [.bottom], color: .black)
+        .border(width: 2, edges: [.bottom], color: .gray)
     }
     
     private func onButtonTapped(index: Int) {

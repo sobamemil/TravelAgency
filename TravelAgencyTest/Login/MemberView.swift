@@ -10,7 +10,12 @@ import SwiftUI
 struct MemberView: View {
     @State private var id: String = ""
     @State private var pwd: String = ""
-    @State private var autoLogin: Bool = false 
+    @State private var autoLogin: Bool = false
+    
+    static let red: Double = 154/255
+    static let green: Double = 189/255
+    static let blue: Double = 199/255
+    let themeColor = Color(red: red, green: green, blue: blue)
     
     var body: some View {
         VStack {
@@ -33,21 +38,17 @@ struct MemberView: View {
                 .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray))
                 .padding(.bottom, 5)
 
-            Toggle(isOn: $autoLogin) {
+            HStack {
                 Text("자동로그인")
-            }
-            .frame(maxWidth: (UIScreen.main.bounds.maxX * 0.8) )
-            
-//            if autoLogin {
-//                Text("autoLogin: On")
-//            } else if !autoLogin {
-//                Text("autoLogin: Off")
-//            }
-
-            
-        }
-        
-        
+                    .frame(alignment: .trailing)
+                Toggle(isOn: $autoLogin) {
+                    
+                }
+                    .labelsHidden()
+                    .toggleStyle(SwitchToggleStyle(tint: themeColor))
+            } // HStack
+            .frame(maxWidth: (UIScreen.main.bounds.maxX * 0.8), alignment: .trailing )
+        } // VStack
     }
 }
 
