@@ -12,7 +12,7 @@ struct LoginView: View {
     
     var body: some View {
         VStack{
-            TopTabBarView(tabIndex: $tabIndex).padding(.bottom, 20)
+            TopTabBarView(tabIndex: $tabIndex).padding(.bottom, 15)
             if tabIndex == 0 {
                 MemberView()
             }
