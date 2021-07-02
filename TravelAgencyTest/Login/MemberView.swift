@@ -55,7 +55,7 @@ struct MemberView: View {
                 Text("로그인")
                     .font(.system(size: 15))
                     .foregroundColor(.white)
-                    .shadow(color: .pink, radius: 4, x: 5, y: 5)
+                    // .shadow(color: .black, radius: 4, x: 5, y: 5)
             } // Login Button
             .frame(width: (UIScreen.main.bounds.maxX * 0.8), height: (UIScreen.main.bounds.maxY * 0.1) / 5).padding(.vertical)
             .background(themeColor)
