@@ -66,7 +66,8 @@ struct MemberView: View {
                 Button(action: {}) {
                     Text("회원가입")
                 }
-            }
+            } // HStack
+            .font(.system(size: 13))
         } // VStack
     }
 }
