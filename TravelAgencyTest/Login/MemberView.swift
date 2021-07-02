@@ -67,7 +67,6 @@ struct MemberView: View {
                     Text("회원가입")
                 }
             }
-            .accentColor(themeColor)
         } // VStack
     }
 }
