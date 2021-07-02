@@ -101,6 +101,7 @@ struct ContentView: View {
             .preferredColorScheme(.light) // dark mode disable
 
         } // NavigationView
+        .accentColor(MemberView().themeColor)
     } // view
     
 }

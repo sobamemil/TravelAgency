@@ -48,6 +48,26 @@ struct MemberView: View {
                     .toggleStyle(SwitchToggleStyle(tint: themeColor))
             } // HStack
             .frame(maxWidth: (UIScreen.main.bounds.maxX * 0.8), alignment: .trailing )
+            .padding()
+
+            HStack {
+                Button(action: {}) {
+                    Text("아이디 찾기")
+                }
+                
+                Text("·")
+                
+                Button(action: {}) {
+                    Text("비밀번호 찾기")
+                }
+                
+                Text("·")
+
+                Button(action: {}) {
+                    Text("회원가입")
+                }
+            }
+            .accentColor(themeColor)
         } // VStack
     }
 }
