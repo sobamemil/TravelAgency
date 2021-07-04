@@ -60,19 +60,19 @@ struct MemberView: View {
                 .padding(.bottom, 5)
 
             HStack {
-                Text("자동로그인")
-                    .frame(alignment: .trailing)
+//                Text("자동로그인")
+//                    .frame(alignment: .leading)
 //                Toggle(isOn: $autoLogin) {
 //
 //                }
 //                    .labelsHidden()
 //                    .toggleStyle(SwitchToggleStyle(tint: themeColor))
                 
-                Toggle("Switch Me", isOn: $isOn)
+                Toggle("자동로그인", isOn: $isOn)
                     .toggleStyle(CheckToggleStyle())
                 
             } // HStack
-            .frame(maxWidth: (UIScreen.main.bounds.maxX * 0.8), alignment: .trailing )
+            .frame(maxWidth: (UIScreen.main.bounds.maxX * 0.8), alignment: .leading )
             .padding()
             .font(.system(size: 15))
             
