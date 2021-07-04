@@ -7,10 +7,31 @@
 
 import SwiftUI
 
+struct CheckToggleStyle: ToggleStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        Button {
+            configuration.isOn.toggle()
+        } label: {
+            Label {
+                configuration.label
+            } icon: {
+                Image(systemName: configuration.isOn ? "checkmark.circle.fill" : "circle")
+                    .foregroundColor(configuration.isOn ? .accentColor : .secondary)
+                    .accessibility(label: Text(configuration.isOn ? "Checked" : "Unchecked"))
+                    .imageScale(.large)
+            }
+        }
+        .buttonStyle(PlainButtonStyle())
+    }
+}
+
 struct MemberView: View {
     @State private var id: String = ""
     @State private var pwd: String = ""
     @State private var autoLogin: Bool = false
+    
+    @State private var isOn = false
+
     
     static let red: Double = 154/255
     static let green: Double = 189/255
@@ -41,11 +62,15 @@ struct MemberView: View {
             HStack {
                 Text("자동로그인")
                     .frame(alignment: .trailing)
-                Toggle(isOn: $autoLogin) {
-                    
-                }
-                    .labelsHidden()
-                    .toggleStyle(SwitchToggleStyle(tint: themeColor))
+//                Toggle(isOn: $autoLogin) {
+//
+//                }
+//                    .labelsHidden()
+//                    .toggleStyle(SwitchToggleStyle(tint: themeColor))
+                
+                Toggle("Switch Me", isOn: $isOn)
+                    .toggleStyle(CheckToggleStyle())
+                
             } // HStack
             .frame(maxWidth: (UIScreen.main.bounds.maxX * 0.8), alignment: .trailing )
             .padding()
