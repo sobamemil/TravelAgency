@@ -10,6 +10,25 @@ import SwiftUI
 struct GuestView: View {
     @State private var name: String = ""
     @State private var reservationNumber: String = ""
+    @State private var isOn = false
+    
+    struct CheckToggleStyle: ToggleStyle {
+        func makeBody(configuration: Configuration) -> some View {
+            Button {
+                configuration.isOn.toggle()
+            } label: {
+                Label {
+                    configuration.label
+                } icon: {
+                    Image(systemName: configuration.isOn ? "checkmark.circle.fill" : "circle")
+                        .foregroundColor(configuration.isOn ? .accentColor : .secondary)
+                        .accessibility(label: Text(configuration.isOn ? "Checked" : "Unchecked"))
+                        .imageScale(.large)
+                }
+            }
+            .buttonStyle(PlainButtonStyle())
+        }
+    }
     
     var body: some View {
         VStack {
@@ -50,6 +69,16 @@ struct GuestView: View {
                     .padding(.bottom, 5)
             } // HStack
             .frame(maxWidth: (UIScreen.main.bounds.maxX * 0.8))
+            
+            HStack {
+                Toggle("패키지", isOn: $isOn)
+                    .toggleStyle(CheckToggleStyle())
+                    .padding(.trailing)
+                Toggle("버스/비자/항공", isOn: $isOn)
+                    .toggleStyle(CheckToggleStyle())
+            }
+            .frame(maxWidth: (UIScreen.main.bounds.maxX * 0.8), alignment: .leading)
+            
         } // VStack
     }
 }
