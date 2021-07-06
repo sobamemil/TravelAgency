@@ -43,23 +43,17 @@ struct MemberView: View {
     
     var body: some View {
         VStack {
-            TextField("  아이디(이메일 계정)", text: $id)
-                .autocapitalization(.none)
-                .disableAutocorrection(true)
-                .textFieldStyle(.plain)
+            TextField("아이디(이메일 계정)", text: $id)
+                .customTextField(padding: 10)
                 .frame(maxWidth: (UIScreen.main.bounds.maxX * 0.8) )
                 .frame(height: (UIScreen.main.bounds.maxY * 0.1) / 2 )
-                .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray))
                 .padding(.bottom, 5)
 
             
-            SecureField("  비밀번호", text: $pwd)
-                .autocapitalization(.none)
-                .disableAutocorrection(true)
-                .textFieldStyle(.plain)
+            SecureField("비밀번호", text: $pwd)
+                .customTextField(padding: 10)
                 .frame(maxWidth: (UIScreen.main.bounds.maxX * 0.8) )
                 .frame(height: (UIScreen.main.bounds.maxY * 0.1) / 2)
-                .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray))
                 .padding(.bottom, 5)
 
             HStack {
