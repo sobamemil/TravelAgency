@@ -58,7 +58,7 @@ struct ContentView: View {
 //                            }
                             
                             Image("koreaTravelAgency").resizable().frame(width: geometry.size.width, height: geometry.size.height * 25)
-                                .padding(.bottom, 20)
+                                .padding(.top)
                             SelectableMenuView()
                             
                             MyDivider()
@@ -107,7 +107,7 @@ struct ContentView: View {
 }
 
 struct MyDivider: View {
-    let color: Color = .green
+    let color: Color = Color.accentColor
     let height: CGFloat = 10
     var body: some View {
         Rectangle()
