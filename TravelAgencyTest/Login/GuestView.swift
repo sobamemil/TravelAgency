@@ -40,6 +40,11 @@ struct GuestView: View {
     }
     
     var body: some View {
+        
+        // 패키지 토글과 버스/비자/항공 토글을 바인딩하여 둘 중 하나만 켜지도록 설정
+        let packTog = Binding<Bool>(get: { self.packageToggle }, set: { self.packageToggle = $0; self.busVisaAirplaneToggle = false;})
+        let busTog = Binding<Bool>(get: { self.busVisaAirplaneToggle }, set: { self.packageToggle = false; self.busVisaAirplaneToggle = $0;})
+        
         VStack {
             TextField("예약자 성명", text: $name)
                 .customTextField(padding: 10)
@@ -70,10 +75,10 @@ struct GuestView: View {
             .frame(maxWidth: (UIScreen.main.bounds.maxX * 0.8))
             
             HStack {
-                Toggle("패키지", isOn: $packageToggle)
+                Toggle("패키지", isOn: packTog)
                     .toggleStyle(CheckToggleStyle())
                     .padding(.trailing)
-                Toggle("버스/비자/항공", isOn: $busVisaAirplaneToggle)
+                Toggle("버스/비자/항공", isOn: busTog)
                     .toggleStyle(CheckToggleStyle())
             } // HStack
             .frame(maxWidth: (UIScreen.main.bounds.maxX * 0.8), alignment: .leading)
