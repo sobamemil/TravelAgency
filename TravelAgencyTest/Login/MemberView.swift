@@ -31,6 +31,9 @@ struct MemberView: View {
     @State private var autoLogin: Bool = false
     
     @State private var isOn = false
+    
+    @Binding var loginClicked: Bool
+    @State var message = ""
 
     
     static let red: Double = 154/255
@@ -76,7 +79,9 @@ struct MemberView: View {
             .padding()
             .font(.system(size: 15))
             
-            Button(action: {}) {
+            Button(action: {
+                loginClicked.toggle()
+            }) {
                 Text("로그인")
                     .font(.system(size: 15))
                     .foregroundColor(.white)
@@ -113,6 +118,6 @@ struct MemberView: View {
 
 struct MemberView_Previes: PreviewProvider {
     static var previews: some View {
-        MemberView()
+        MemberView(loginClicked: .constant(false))
     }
 }

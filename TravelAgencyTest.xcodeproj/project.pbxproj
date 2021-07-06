@@ -14,6 +14,7 @@
 		5750E5D8268AE0B0000B872E /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750E5D7268AE0B0000B872E /* TabBarButton.swift */; };
 		5750E5DA268AE1F1000B872E /* TopTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750E5D9268AE1F1000B872E /* TopTabBarView.swift */; };
 		5750E5DC268AE51D000B872E /* EdgeBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750E5DB268AE51D000B872E /* EdgeBorder.swift */; };
+		576C2D4A269421EE00494242 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576C2D49269421EE00494242 /* AlertView.swift */; };
 		577F942B2681D6A60087678A /* SelectableMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577F942A2681D6A60087678A /* SelectableMenuView.swift */; };
 		5799C5902681AD7E00D156E3 /* TravelAgencyTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5799C58F2681AD7E00D156E3 /* TravelAgencyTestApp.swift */; };
 		5799C5922681AD7E00D156E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5799C5912681AD7E00D156E3 /* ContentView.swift */; };
@@ -31,6 +32,7 @@
 		5750E5D7268AE0B0000B872E /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
 		5750E5D9268AE1F1000B872E /* TopTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTabBarView.swift; sourceTree = "<group>"; };
 		5750E5DB268AE51D000B872E /* EdgeBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeBorder.swift; sourceTree = "<group>"; };
+		576C2D49269421EE00494242 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		577F942A2681D6A60087678A /* SelectableMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableMenuView.swift; sourceTree = "<group>"; };
 		5799C58C2681AD7E00D156E3 /* TravelAgencyTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelAgencyTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5799C58F2681AD7E00D156E3 /* TravelAgencyTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelAgencyTestApp.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				5750E5D2268ADFC7000B872E /* Login */,
 				57197E0A2689AD740017D5CB /* Info.plist */,
 				5799C58F2681AD7E00D156E3 /* TravelAgencyTestApp.swift */,
+				576C2D49269421EE00494242 /* AlertView.swift */,
 				5799C5912681AD7E00D156E3 /* ContentView.swift */,
 				5703618D26846E71009557B3 /* SideMenuView.swift */,
 				57B335702682AA7E0021E645 /* ListView.swift */,
@@ -179,6 +182,7 @@
 				5750E5DC268AE51D000B872E /* EdgeBorder.swift in Sources */,
 				5750E5DA268AE1F1000B872E /* TopTabBarView.swift in Sources */,
 				5750E5D4268ADFF4000B872E /* MemberView.swift in Sources */,
+				576C2D4A269421EE00494242 /* AlertView.swift in Sources */,
 				57B335712682AA7E0021E645 /* ListView.swift in Sources */,
 				5703618E26846E71009557B3 /* SideMenuView.swift in Sources */,
 				5750E5D8268AE0B0000B872E /* TabBarButton.swift in Sources */,
