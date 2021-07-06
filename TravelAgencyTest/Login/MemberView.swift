@@ -80,7 +80,9 @@ struct MemberView: View {
             .font(.system(size: 15))
             
             Button(action: {
-                loginClicked.toggle()
+                withAnimation {
+                    loginClicked.toggle()
+                }
             }) {
                 Text("로그인")
                     .font(.system(size: 15))
