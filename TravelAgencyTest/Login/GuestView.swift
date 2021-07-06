@@ -13,7 +13,7 @@ struct GuestView: View {
     @State private var phoneNumber: String = ""
     @State private var packageToggle = true
     @State private var busVisaAirplaneToggle = false
-    @State private var checkReservationButton = false
+    @Binding var checkReservationClicked: Bool
     
     static let red: Double = 154/255
     static let green: Double = 189/255
@@ -95,7 +95,9 @@ struct GuestView: View {
                 .padding(.bottom)
             
             Button(action: {
-                self.checkReservationButton = true
+                withAnimation {
+                    self.checkReservationClicked.toggle()
+                }
             }) {
                 Text("예약 조회")
                     .font(.system(size: 15))
@@ -106,9 +108,6 @@ struct GuestView: View {
             .frame(width: (UIScreen.main.bounds.maxX * 0.8), height: (UIScreen.main.bounds.maxY * 0.1) / 5).padding(.vertical)
             .background(themeColor)
             .cornerRadius(15)
-            .alert(isPresented: $checkReservationButton) {
-                Alert(title: Text("예약 정보 없음"), message: Text("해당 예약정보가 존재하지 않습니다."), dismissButton: .default(Text("확인")))
-            }
             
         } // VStack
     }
@@ -129,7 +128,6 @@ struct TextFieldModifier: ViewModifier {
             .overlay(RoundedRectangle(cornerRadius: padding)
                         .stroke(color, lineWidth: lineWidth)
             )
-
     }
 }
 
@@ -143,6 +141,6 @@ extension View {
 
 struct GuestView_Previews: PreviewProvider {
     static var previews: some View {
-        GuestView()
+        GuestView(checkReservationClicked: .constant(false))
     }
 }

@@ -33,7 +33,7 @@ struct MemberView: View {
     @State private var isOn = false
     
     @Binding var loginClicked: Bool
-    @State var message = ""
+    @State private var message = ""
 
     
     static let red: Double = 154/255
