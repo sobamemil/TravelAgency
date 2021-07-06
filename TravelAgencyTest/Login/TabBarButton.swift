@@ -13,9 +13,10 @@ struct TabBarButton: View {
     
     var body: some View {
         Text(text)
-            .fontWeight(isSelected ? .heavy : .regular)
-            .foregroundColor(isSelected ? MemberView().themeColor : .gray)
+            .fontWeight(isSelected ? .heavy : .light)
+            .foregroundColor(isSelected ? MemberView().themeColor : .gray.opacity(0.2))
             .padding(.bottom, 10)
-            .border(width: isSelected ? 3 : 1, edges: [.bottom], color: MemberView().themeColor)
+            .frame(width: ((UIScreen.main.bounds.width - 60) / 2), alignment: .center)
+            .border(width: 4, edges: [.bottom], color: isSelected ? MemberView().themeColor : Color.gray.opacity(0.2))
     }
 }

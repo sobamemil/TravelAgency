@@ -11,22 +11,27 @@ struct TopTabBarView: View {
     @Binding var tabIndex: Int
     
     var body: some View {
-        HStack(spacing: 20) {
+        HStack(spacing: 0) {
             
             Spacer()
             
             TabBarButton(text: "회원", isSelected: .constant(tabIndex == 0))
                 .onTapGesture { onButtonTapped(index: 0) }
             
-            Spacer()
-
             TabBarButton(text: "비회원", isSelected: .constant(tabIndex == 1))
                 .onTapGesture { onButtonTapped(index: 1) }
                 
             Spacer()
         }
-        .frame(width: UIScreen.main.bounds.maxX - 60, alignment: .center)
-        .border(width: 2, edges: [.bottom], color: .gray)
+        .frame(width: UIScreen.main.bounds.width - 60, alignment: .center)
+//        .overlay(Rectangle()
+//                    .frame(height: 2)
+//                    // The underline is visible only for the currently selected tab
+//                    .foregroundColor(Color.gray)
+//                   .padding(.top, 2)
+//                   // Animates the tab selection
+//                   .transition(.move(edge: .bottom)) ,alignment: .bottomLeading)
+        //.border(width: 2, edges: [.bottom], color: .gray)
     }
     
     private func onButtonTapped(index: Int) {
