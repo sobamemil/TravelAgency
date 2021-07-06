@@ -45,34 +45,34 @@ struct GuestView: View {
         let packTog = Binding<Bool>(get: { self.packageToggle }, set: { self.packageToggle = $0; self.busVisaAirplaneToggle = false;})
         let busTog = Binding<Bool>(get: { self.busVisaAirplaneToggle }, set: { self.packageToggle = false; self.busVisaAirplaneToggle = $0;})
         
-        VStack {
+        VStack(spacing: 0) {
             TextField("예약자 성명", text: $name)
                 .customTextField(padding: 10)
                 .frame(maxWidth: (UIScreen.main.bounds.maxX * 0.8) )
                 .frame(height: (UIScreen.main.bounds.maxY * 0.1) / 2 )
-                .padding(.bottom, 5)
+                .padding(.bottom, 10)
                 
             TextField("예약번호(영문, 숫자 포함 12자리)", text: $reservationNumber)
                 .customTextField(padding: 10)
                 .frame(maxWidth: (UIScreen.main.bounds.maxX * 0.8) )
                 .frame(height: (UIScreen.main.bounds.maxY * 0.1) / 2 )
-                .padding(.bottom, 5)
+                .padding(.bottom, 10)
             
             HStack {
-                Text("연락처")
+                TextField("연락처", text: $phoneNumber)
+                    .customTextField(padding: 10)
                     .frame(maxWidth: (UIScreen.main.bounds.maxX * 0.15) )
                     .frame(height: (UIScreen.main.bounds.maxY * 0.1) / 2)
-                    .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray))
-                    .padding(.bottom, 5)
-                    .foregroundColor(.gray)
+                    .disabled(true)
+                    
                 
                 TextField("ex) 01012345678", text: $phoneNumber)
                     .customTextField(padding: 10)
                     .frame(maxWidth: (UIScreen.main.bounds.maxX * 0.65) )
                     .frame(height: (UIScreen.main.bounds.maxY * 0.1) / 2)
-                    .padding(.bottom, 5)
             } // HStack
             .frame(maxWidth: (UIScreen.main.bounds.maxX * 0.8))
+            .padding(.bottom, 10)
             
             HStack {
                 Toggle("패키지", isOn: packTog)
@@ -82,13 +82,15 @@ struct GuestView: View {
                     .toggleStyle(CheckToggleStyle())
             } // HStack
             .frame(maxWidth: (UIScreen.main.bounds.maxX * 0.8), alignment: .leading)
-            .padding(.bottom)
+            .padding(.bottom, 10)
             
             Text("※ 예약 시 제공한 본인의 연락처 또는 이메일 정보를 입력해 주시기 바랍니다.")
+                .font(.system(size: 15))
                 .frame(width: (UIScreen.main.bounds.maxX * 0.7), alignment: .leading)
-                .padding(.bottom)
+                .padding(.bottom, 10)
             
             Text("※ 예약 시 본인의 연락처 또는 이메일을 입력하지 않은 경우, 전화로 연락 바랍니다.")
+                .font(.system(size: 15))
                 .frame(width: (UIScreen.main.bounds.maxX * 0.7), alignment: .leading)
                 .padding(.bottom)
             

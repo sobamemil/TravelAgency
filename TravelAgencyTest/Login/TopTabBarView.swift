@@ -35,7 +35,8 @@ struct TopTabBarView: View {
     }
     
     private func onButtonTapped(index: Int) {
-        withAnimation { tabIndex = index }
+        // withAnimation { tabIndex = index }
+        tabIndex = index
     }
 }
 
