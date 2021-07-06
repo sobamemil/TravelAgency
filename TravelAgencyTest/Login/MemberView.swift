@@ -42,19 +42,19 @@ struct MemberView: View {
     let themeColor = Color(red: red, green: green, blue: blue)
     
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             TextField("아이디(이메일 계정)", text: $id)
                 .customTextField(padding: 10)
                 .frame(maxWidth: (UIScreen.main.bounds.maxX * 0.8) )
                 .frame(height: (UIScreen.main.bounds.maxY * 0.1) / 2 )
-                .padding(.bottom, 5)
+                .padding(.bottom, 10)
 
             
             SecureField("비밀번호", text: $pwd)
                 .customTextField(padding: 10)
                 .frame(maxWidth: (UIScreen.main.bounds.maxX * 0.8) )
                 .frame(height: (UIScreen.main.bounds.maxY * 0.1) / 2)
-                .padding(.bottom, 5)
+                .padding(.bottom)
 
             HStack {
 //                Text("자동로그인")
@@ -70,7 +70,7 @@ struct MemberView: View {
                 
             } // HStack
             .frame(maxWidth: (UIScreen.main.bounds.maxX * 0.8), alignment: .leading )
-            .padding()
+            .padding(.bottom)
             .font(.system(size: 15))
             
             Button(action: {
