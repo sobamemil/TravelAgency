@@ -13,6 +13,7 @@ struct GuestView: View {
     @State private var phoneNumber: String = ""
     @State private var packageToggle = true
     @State private var busVisaAirplaneToggle = false
+    @State private var checkReservationButton = false
     
     static let red: Double = 154/255
     static let green: Double = 189/255
@@ -24,7 +25,6 @@ struct GuestView: View {
         func makeBody(configuration: Configuration) -> some View {
             Button {
                 configuration.isOn.toggle()
-                
             } label: {
                 Label {
                     configuration.label
@@ -92,7 +92,9 @@ struct GuestView: View {
             .frame(width: (UIScreen.main.bounds.maxX * 0.7), alignment: .leading)
             .padding(.bottom)
             
-            Button(action: {}) {
+            Button(action: {
+                self.checkReservationButton = true
+            }) {
                 Text("예약 조회")
                     .font(.system(size: 15))
                     .foregroundColor(.white)
@@ -102,6 +104,9 @@ struct GuestView: View {
             .frame(width: (UIScreen.main.bounds.maxX * 0.8), height: (UIScreen.main.bounds.maxY * 0.1) / 5).padding(.vertical)
             .background(themeColor)
             .cornerRadius(15)
+            .alert(isPresented: $checkReservationButton) {
+                Alert(title: Text("예약 정보 없음"), message: Text("해당 예약정보가 존재하지 않습니다."), dismissButton: .default(Text("확인")))
+            }
             
         } // VStack
     }
