@@ -84,13 +84,13 @@ struct GuestView: View {
             .frame(maxWidth: (UIScreen.main.bounds.maxX * 0.8), alignment: .leading)
             .padding(.bottom)
             
-            VStack {
-                Text("※ 예약 시 제공한 본인의 연락처 또는 이메일 정보를 입력해 주시기 바랍니다.")
-                    .padding(.bottom)
-                Text("※ 예약 시 본인의 연락처 또는 이메일을 입력하지 않은 경우, 전화로 연락 바랍니다.")
-            } // VStack
-            .frame(width: (UIScreen.main.bounds.maxX * 0.7), alignment: .leading)
-            .padding(.bottom)
+            Text("※ 예약 시 제공한 본인의 연락처 또는 이메일 정보를 입력해 주시기 바랍니다.")
+                .frame(width: (UIScreen.main.bounds.maxX * 0.7), alignment: .leading)
+                .padding(.bottom)
+            
+            Text("※ 예약 시 본인의 연락처 또는 이메일을 입력하지 않은 경우, 전화로 연락 바랍니다.")
+                .frame(width: (UIScreen.main.bounds.maxX * 0.7), alignment: .leading)
+                .padding(.bottom)
             
             Button(action: {
                 self.checkReservationButton = true
