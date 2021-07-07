@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		5703390926957BB500CC8AAF /* FindIDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703390826957BB500CC8AAF /* FindIDView.swift */; };
 		5703390B26957BBE00CC8AAF /* FindPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703390A26957BBE00CC8AAF /* FindPasswordView.swift */; };
+		5703390D269597DE00CC8AAF /* MemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703390C269597DD00CC8AAF /* MemberView.swift */; };
+		5703390F2695ACCD00CC8AAF /* FindAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703390E2695ACCD00CC8AAF /* FindAccountView.swift */; };
 		5703618E26846E71009557B3 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703618D26846E71009557B3 /* SideMenuView.swift */; };
 		5750E5D1268ADD59000B872E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750E5D0268ADD59000B872E /* LoginView.swift */; };
-		5750E5D4268ADFF4000B872E /* MemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750E5D3268ADFF4000B872E /* MemberView.swift */; };
 		5750E5D6268AE000000B872E /* GuestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750E5D5268AE000000B872E /* GuestView.swift */; };
 		5750E5D8268AE0B0000B872E /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750E5D7268AE0B0000B872E /* TabBarButton.swift */; };
 		5750E5DA268AE1F1000B872E /* TopTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750E5D9268AE1F1000B872E /* TopTabBarView.swift */; };
@@ -28,10 +29,11 @@
 /* Begin PBXFileReference section */
 		5703390826957BB500CC8AAF /* FindIDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindIDView.swift; sourceTree = "<group>"; };
 		5703390A26957BBE00CC8AAF /* FindPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPasswordView.swift; sourceTree = "<group>"; };
+		5703390C269597DD00CC8AAF /* MemberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberView.swift; sourceTree = "<group>"; };
+		5703390E2695ACCD00CC8AAF /* FindAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindAccountView.swift; sourceTree = "<group>"; };
 		5703618D26846E71009557B3 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 		57197E0A2689AD740017D5CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5750E5D0268ADD59000B872E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		5750E5D3268ADFF4000B872E /* MemberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberView.swift; sourceTree = "<group>"; };
 		5750E5D5268AE000000B872E /* GuestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestView.swift; sourceTree = "<group>"; };
 		5750E5D7268AE0B0000B872E /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
 		5750E5D9268AE1F1000B872E /* TopTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTabBarView.swift; sourceTree = "<group>"; };
@@ -61,14 +63,15 @@
 			isa = PBXGroup;
 			children = (
 				5750E5D0268ADD59000B872E /* LoginView.swift */,
-				5750E5D3268ADFF4000B872E /* MemberView.swift */,
+				5703390C269597DD00CC8AAF /* MemberView.swift */,
 				5750E5D5268AE000000B872E /* GuestView.swift */,
+				5703390E2695ACCD00CC8AAF /* FindAccountView.swift */,
+				5703390826957BB500CC8AAF /* FindIDView.swift */,
+				5703390A26957BBE00CC8AAF /* FindPasswordView.swift */,
 				5750E5D9268AE1F1000B872E /* TopTabBarView.swift */,
 				5750E5D7268AE0B0000B872E /* TabBarButton.swift */,
 				5750E5DB268AE51D000B872E /* EdgeBorder.swift */,
 				576C2D49269421EE00494242 /* AlertView.swift */,
-				5703390826957BB500CC8AAF /* FindIDView.swift */,
-				5703390A26957BBE00CC8AAF /* FindPasswordView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -185,11 +188,12 @@
 			files = (
 				5703390926957BB500CC8AAF /* FindIDView.swift in Sources */,
 				5750E5D1268ADD59000B872E /* LoginView.swift in Sources */,
+				5703390F2695ACCD00CC8AAF /* FindAccountView.swift in Sources */,
+				5703390D269597DE00CC8AAF /* MemberView.swift in Sources */,
 				5703390B26957BBE00CC8AAF /* FindPasswordView.swift in Sources */,
 				5799C5922681AD7E00D156E3 /* ContentView.swift in Sources */,
 				5750E5DC268AE51D000B872E /* EdgeBorder.swift in Sources */,
 				5750E5DA268AE1F1000B872E /* TopTabBarView.swift in Sources */,
-				5750E5D4268ADFF4000B872E /* MemberView.swift in Sources */,
 				576C2D4A269421EE00494242 /* AlertView.swift in Sources */,
 				57B335712682AA7E0021E645 /* ListView.swift in Sources */,
 				5703618E26846E71009557B3 /* SideMenuView.swift in Sources */,
