@@ -31,7 +31,7 @@ struct LoginView: View {
             
             if loginClicked {
                 Color.gray.opacity(0.8).ignoresSafeArea(.all)
-                AlertView(shown: $loginClicked, isSuccess: true, message: "테스트 메시지", title: "테스트 타이틀", themeColor: .accentColor)
+                AlertView(shown: $loginClicked, isSuccess: true, message: "아이디 또는 비밀번호를 다시 확인해 주세요.\\n등록되지 않은 아이디 또는 비밀번호입니다.", title: "로그인 실패", themeColor: .accentColor)
                     //.position(x: (UIScreen.main.bounds.width / 2),y: (UIScreen.main.bounds.height / 3)) // 위에서부터 1/3 지점에 알림창이 뜨도록 설정
             }
             
