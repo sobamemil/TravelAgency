@@ -101,7 +101,7 @@ struct ContentView: View {
             .preferredColorScheme(.light) // dark mode disable
 
         } // NavigationView
-        .accentColor(MemberView(loginClicked: .constant(false)).themeColor)
+        .accentColor(MemberView(loginClicked: .constant(false), vstackSize: .constant(CGSize(width: 0, height: 0))).themeColor)
     } // view
     
 }
