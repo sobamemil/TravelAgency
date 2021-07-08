@@ -11,13 +11,35 @@ struct FindAccountView: View {
     @State var tabIndex = 0
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
+            
+            VStack(alignment: .leading) {
+                switch(tabIndex) {
+                case 0:
+                    Text("아이디를 잊어버리셨나요?")
+                        .font(.title)
+                    Text("하단의 방법을 통해 아이디를 찾을 수 있습니다.")
+                        .font(.subheadline)
+                case 1:
+                    Text("비밀번호를 잊어버리셨나요?")
+                        .font(.title)
+                    Text("하단의 방법을 통해 아이디를 찾을 수 있습니다.")
+                        .font(.subheadline)
+                default:
+                    Text("")
+                }
+            } // VStack
+            .padding(.top)
+            .padding(.bottom)
+            
+            
             TopTabBarView(tabIndex: $tabIndex, firstText: "아이디 찾기", secondText: "비밀번호 찾기").padding(.bottom, 15)
             Spacer()
             
-        }
+        } // VStack
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading: CustomBackButton(tabIndex: $tabIndex, firstText: "아이디 찾기", secondText: "비밀번호 찾기"))
+        .frame(alignment: .leading)
         .padding(.top, 10)
     }
 }
