@@ -88,13 +88,13 @@ struct MemberView: View {
             .cornerRadius(15)
 
             HStack {
-                NavigationLink(destination: FindAccountView()) {
+                NavigationLink(destination: FindAccountView(tabIndex: 0)) {
                     Text("아이디 찾기")
                 }
 
                 Text("·")
                 
-                NavigationLink(destination: Text("비밀번호 찾기 화면")) {
+                NavigationLink(destination: FindAccountView(tabIndex: 1)) {
                     Text("비밀번호 찾기")
                 }
                 
