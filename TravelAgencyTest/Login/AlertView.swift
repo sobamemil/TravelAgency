@@ -15,11 +15,12 @@ struct AlertView: View {
     var message: String
     var title: String
     var themeColor: Color
+    let customRedColor: Color = Color(red: 199/255, green: 124/255, blue: 121/255)
      
      var body: some View {
          VStack {
              // Image(isSuccess ? "check":"remove").resizable().frame(width: 50, height: 50).padding(.top, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
-             Text(title).foregroundColor(.red).padding(.top)
+             Text(title).foregroundColor(customRedColor).padding(.top)
              Spacer()
              Text(message).foregroundColor(Color.black)
              Spacer()

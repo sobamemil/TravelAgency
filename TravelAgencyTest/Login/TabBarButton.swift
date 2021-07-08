@@ -17,6 +17,6 @@ struct TabBarButton: View {
             .foregroundColor(isSelected ? MemberView(loginClicked: .constant(false)).themeColor : .gray.opacity(0.4))
             .padding(.bottom, 10)
             .frame(width: ((UIScreen.main.bounds.width - 60) / 2), alignment: .center)
-            .border(width: 4, edges: [.bottom], color: isSelected ? MemberView(loginClicked: .constant(false)).themeColor : Color.gray.opacity(0.2))
+            .border(width: 3, edges: [.bottom], color: isSelected ? MemberView(loginClicked: .constant(false)).themeColor : Color.gray.opacity(0.2))
     }
 }

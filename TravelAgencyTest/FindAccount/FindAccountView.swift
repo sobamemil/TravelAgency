@@ -17,12 +17,12 @@ struct FindAccountView: View {
                 switch(tabIndex) {
                 case 0:
                     Text("아이디를 잊어버리셨나요?")
-                        .font(.title)
+                        .font(.system(size: 25, weight: .bold, design: .default))
                     Text("하단의 방법을 통해 아이디를 찾을 수 있습니다.")
                         .font(.subheadline)
                 case 1:
                     Text("비밀번호를 잊어버리셨나요?")
-                        .font(.title)
+                        .font(.system(size: 25, weight: .bold, design: .default))
                     Text("하단의 방법을 통해 비밀번호를 찾을 수 있습니다.")
                         .font(.subheadline)
                 default:
