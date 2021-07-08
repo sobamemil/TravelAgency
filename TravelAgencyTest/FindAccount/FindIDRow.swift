@@ -7,12 +7,16 @@
 
 import SwiftUI
 
-struct FindIdRow: View {
+struct FindIDRow: View {
+    let index: Int
+    let textList: Array<String> = ["휴대폰 본인인증", "실명인증", "이메일 본인인증"]
+    
     var body: some View {
-        VStack {
-            Text("휴대폰 본인인증")
-            Text("실명인증")
-            Text("이메일 본인인증")
+        HStack {
+            Text(textList[index])
+            Spacer()
+            Image(systemName: "chevron.forward")
         }
+        
     }
 }

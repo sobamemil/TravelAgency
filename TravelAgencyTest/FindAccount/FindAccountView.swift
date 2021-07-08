@@ -23,7 +23,7 @@ struct FindAccountView: View {
                 case 1:
                     Text("비밀번호를 잊어버리셨나요?")
                         .font(.title)
-                    Text("하단의 방법을 통해 아이디를 찾을 수 있습니다.")
+                    Text("하단의 방법을 통해 비밀번호를 찾을 수 있습니다.")
                         .font(.subheadline)
                 default:
                     Text("")
@@ -33,17 +33,22 @@ struct FindAccountView: View {
             .padding(.bottom)
             
             
-            TopTabBarView(tabIndex: $tabIndex, firstText: "아이디 찾기", secondText: "비밀번호 찾기").padding(.bottom, 15)
+            TopTabBarView(tabIndex: $tabIndex, firstText: "아이디 찾기", secondText: "비밀번호 찾기")
+                // .padding(.bottom, 15)
             
-            FindIDView()
+            List {
+                ForEach(0..<3) { num in
+                    FindIDRow(index: num)
+                }
+            } // List
             
             Spacer()
             
         } // VStack
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading: CustomBackButton(tabIndex: $tabIndex, firstText: "아이디 찾기", secondText: "비밀번호 찾기"))
-        .frame(alignment: .leading)
         .padding(.top, 10)
+        .frame(maxWidth: (UIScreen.main.bounds.maxX - 60))
     }
 }
 

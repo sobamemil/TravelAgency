@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5703390926957BB500CC8AAF /* FindIDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703390826957BB500CC8AAF /* FindIDView.swift */; };
-		5703390B26957BBE00CC8AAF /* FindPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703390A26957BBE00CC8AAF /* FindPasswordView.swift */; };
 		5703390D269597DE00CC8AAF /* MemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703390C269597DD00CC8AAF /* MemberView.swift */; };
 		5703390F2695ACCD00CC8AAF /* FindAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703390E2695ACCD00CC8AAF /* FindAccountView.swift */; };
 		570339122696FBA900CC8AAF /* FindIDRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570339112696FBA900CC8AAF /* FindIDRow.swift */; };
@@ -29,8 +27,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5703390826957BB500CC8AAF /* FindIDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindIDView.swift; sourceTree = "<group>"; };
-		5703390A26957BBE00CC8AAF /* FindPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPasswordView.swift; sourceTree = "<group>"; };
 		5703390C269597DD00CC8AAF /* MemberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberView.swift; sourceTree = "<group>"; };
 		5703390E2695ACCD00CC8AAF /* FindAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindAccountView.swift; sourceTree = "<group>"; };
 		570339112696FBA900CC8AAF /* FindIDRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindIDRow.swift; sourceTree = "<group>"; };
@@ -67,8 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				5703390E2695ACCD00CC8AAF /* FindAccountView.swift */,
-				5703390826957BB500CC8AAF /* FindIDView.swift */,
-				5703390A26957BBE00CC8AAF /* FindPasswordView.swift */,
 				570339112696FBA900CC8AAF /* FindIDRow.swift */,
 				570339132696FBB200CC8AAF /* FindPasswordRow.swift */,
 			);
@@ -108,11 +102,11 @@
 		5799C58E2681AD7E00D156E3 /* TravelAgencyTest */ = {
 			isa = PBXGroup;
 			children = (
+				570339152696FC1700CC8AAF /* FindAccount */,
 				5750E5D2268ADFC7000B872E /* Login */,
 				57197E0A2689AD740017D5CB /* Info.plist */,
-				5799C58F2681AD7E00D156E3 /* TravelAgencyTestApp.swift */,
 				5799C5912681AD7E00D156E3 /* ContentView.swift */,
-				570339152696FC1700CC8AAF /* FindAccount */,
+				5799C58F2681AD7E00D156E3 /* TravelAgencyTestApp.swift */,
 				5703618D26846E71009557B3 /* SideMenuView.swift */,
 				57B335702682AA7E0021E645 /* ListView.swift */,
 				577F942A2681D6A60087678A /* SelectableMenuView.swift */,
@@ -201,11 +195,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				570339122696FBA900CC8AAF /* FindIDRow.swift in Sources */,
-				5703390926957BB500CC8AAF /* FindIDView.swift in Sources */,
 				5750E5D1268ADD59000B872E /* LoginView.swift in Sources */,
 				5703390F2695ACCD00CC8AAF /* FindAccountView.swift in Sources */,
 				5703390D269597DE00CC8AAF /* MemberView.swift in Sources */,
-				5703390B26957BBE00CC8AAF /* FindPasswordView.swift in Sources */,
 				570339142696FBB200CC8AAF /* FindPasswordRow.swift in Sources */,
 				5799C5922681AD7E00D156E3 /* ContentView.swift in Sources */,
 				5750E5DC268AE51D000B872E /* EdgeBorder.swift in Sources */,

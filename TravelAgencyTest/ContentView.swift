@@ -15,6 +15,12 @@ struct ContentView: View {
     @State
     var showMenu = false
     
+    // 적용 시 List의 background color와 cell color를 변경할 수 있음.
+//    init() {
+//        UITableViewCell.appearance().backgroundColor = .clear
+//        UITableView.appearance().backgroundColor = .clear
+//    }
+    
     var body: some View {
         let drag = DragGesture()
             .onEnded { gesture in
