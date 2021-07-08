@@ -88,7 +88,7 @@ struct MemberView: View {
             .cornerRadius(15)
 
             HStack {
-                NavigationLink(destination: FindIDView()) {
+                NavigationLink(destination: FindAccountView()) {
                     Text("아이디 찾기")
                 }
 

@@ -9,16 +9,18 @@ import SwiftUI
 
 struct TopTabBarView: View {
     @Binding var tabIndex: Int
+    let firstText: String
+    let secondText: String
     
     var body: some View {
         HStack(spacing: 0) {
             
             Spacer()
             
-            TabBarButton(text: "회원", isSelected: .constant(tabIndex == 0))
+            TabBarButton(text: firstText, isSelected: .constant(tabIndex == 0))
                 .onTapGesture { onButtonTapped(index: 0) }
             
-            TabBarButton(text: "비회원", isSelected: .constant(tabIndex == 1))
+            TabBarButton(text: secondText, isSelected: .constant(tabIndex == 1))
                 .onTapGesture { onButtonTapped(index: 1) }
                 
             Spacer()
@@ -42,6 +44,6 @@ struct TopTabBarView: View {
 
 struct TopTabBarView_Previews: PreviewProvider {
     static var previews: some View {
-        TopTabBarView(tabIndex: .constant(0))
+        TopTabBarView(tabIndex: .constant(0), firstText: "first", secondText: "second")
     }
 }

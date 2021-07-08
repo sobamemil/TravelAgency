@@ -15,7 +15,7 @@ struct LoginView: View {
     var body: some View {
         ZStack {
             VStack{
-                TopTabBarView(tabIndex: $tabIndex).padding(.bottom, 15)
+                TopTabBarView(tabIndex: $tabIndex, firstText: "회원", secondText: "비회원").padding(.bottom, 15)
                 if tabIndex == 0 {
                     MemberView(loginClicked: $loginClicked)
                 }
@@ -39,7 +39,6 @@ struct LoginView: View {
                 AlertView(shown: $checkReservationClicked, isSuccess: true, message: "해당 예약 정보가 존재하지 않습니다.", title: "예약 정보 없음", themeColor: .accentColor)
             }
         } // ZStack
-        
     }
 }
 
