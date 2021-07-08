@@ -34,6 +34,9 @@ struct FindAccountView: View {
             
             
             TopTabBarView(tabIndex: $tabIndex, firstText: "아이디 찾기", secondText: "비밀번호 찾기").padding(.bottom, 15)
+            
+            FindIDView()
+            
             Spacer()
             
         } // VStack

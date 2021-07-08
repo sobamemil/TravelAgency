@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct FindIDView: View {
+    
     var body: some View {
         Text("FindIDView")
     }
