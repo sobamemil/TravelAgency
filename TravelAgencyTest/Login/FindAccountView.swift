@@ -18,6 +18,7 @@ struct FindAccountView: View {
         }
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading: CustomBackButton(tabIndex: $tabIndex, firstText: "아이디 찾기", secondText: "비밀번호 찾기"))
+        .padding(.top, 10)
     }
 }
 
