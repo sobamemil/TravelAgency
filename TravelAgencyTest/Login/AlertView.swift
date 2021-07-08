@@ -20,9 +20,14 @@ struct AlertView: View {
      var body: some View {
          VStack {
              // Image(isSuccess ? "check":"remove").resizable().frame(width: 50, height: 50).padding(.top, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
-             Text(title).foregroundColor(customRedColor).padding(.top)
+             Text(title)
+                 .foregroundColor(customRedColor)
+                 .font(.system(size: 15, weight: .bold))
+                 .padding(.top)
              Spacer()
-             Text(message).foregroundColor(Color.black)
+             Text(message)
+                 .foregroundColor(Color.black)
+                 .font(.system(size: 15))
              Spacer()
              HStack {
                  Button(action: {
