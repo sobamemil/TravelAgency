@@ -17,29 +17,36 @@ struct FindAccountView: View {
             
         }
         .navigationBarBackButtonHidden(true)
-        .navigationBarItems(leading: CustomBackButton(tabIndex: $tabIndex))
+        .navigationBarItems(leading: CustomBackButton(tabIndex: $tabIndex, firstText: "아이디 찾기", secondText: "비밀번호 찾기"))
     }
 }
 
 struct CustomBackButton: View {
     @Binding var tabIndex: Int
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    let firstText: String
+    let secondText: String
+    
+    init(tabIndex: Binding<Int> = .constant(0), firstText: String = "돌아가기", secondText: String = "돌아가기") {
+        self._tabIndex = tabIndex
+        self.firstText = firstText
+        self.secondText = secondText
+    }
     
     var body: some View {
-            Button {
-                presentationMode.wrappedValue.dismiss()
-            } label: {
-                HStack(spacing: 0) {
-                    Image(systemName: "chevron.backward")
-                    if tabIndex == 0 {
-                        Text("아이디 찾기")
-                    } else {
-                        Text("비밀번호 찾기")
-                    }
+        Button {
+            presentationMode.wrappedValue.dismiss()
+        } label: {
+            HStack {
+                Image(systemName: "chevron.backward")
+                if tabIndex == 0 {
+                    Text(firstText)
+                } else {
+                    Text(secondText)
                 }
-                .foregroundColor(MemberView(loginClicked: .constant(true)).themeColor)
-                
             }
+            .foregroundColor(MemberView(loginClicked: .constant(true)).themeColor)
+        }
     }
 }
 

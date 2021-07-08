@@ -25,7 +25,7 @@ struct LoginView: View {
                 Spacer()
             } // VStack
             .frame(width: UIScreen.main.bounds.width - 24, alignment: .center)
-            .padding(.horizontal, 12)
+            //.padding(.horizontal, .infinity)
             .padding(.top, 10)
             
             if loginClicked {
@@ -39,6 +39,8 @@ struct LoginView: View {
                 AlertView(shown: $checkReservationClicked, isSuccess: true, message: "해당 예약 정보가 존재하지 않습니다.", title: "예약 정보 없음", themeColor: .accentColor)
             }
         } // ZStack
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(leading: CustomBackButton())
     }
 }
 
