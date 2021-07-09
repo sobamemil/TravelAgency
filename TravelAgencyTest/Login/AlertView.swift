@@ -10,7 +10,6 @@ import SwiftUI
 struct AlertView: View {
      
     @Binding var shown: Bool
-    //@Binding var closureA: AlertAction?
     var isSuccess: Bool
     var message: String
     var title: String
@@ -48,6 +47,5 @@ struct AlertView: View {
          .background(Color.white)
          .cornerRadius(12)
          .clipped()
-         
      }
  }
