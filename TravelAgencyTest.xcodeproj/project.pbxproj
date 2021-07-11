@@ -24,6 +24,7 @@
 		5799C5942681AD7F00D156E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5799C5932681AD7F00D156E3 /* Assets.xcassets */; };
 		5799C5972681AD7F00D156E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5799C5962681AD7F00D156E3 /* Preview Assets.xcassets */; };
 		57B335712682AA7E0021E645 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B335702682AA7E0021E645 /* ListView.swift */; };
+		57F7CAE2269AF123000B01F0 /* PhoneNumberAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F7CAE1269AF123000B01F0 /* PhoneNumberAuth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		5799C5932681AD7F00D156E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5799C5962681AD7F00D156E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		57B335702682AA7E0021E645 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		57F7CAE1269AF123000B01F0 /* PhoneNumberAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberAuth.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				5703390E2695ACCD00CC8AAF /* FindAccountView.swift */,
 				570339112696FBA900CC8AAF /* FindIDRow.swift */,
 				570339132696FBB200CC8AAF /* FindPasswordRow.swift */,
+				57F7CAE1269AF123000B01F0 /* PhoneNumberAuth.swift */,
 			);
 			path = FindAccount;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				5703390F2695ACCD00CC8AAF /* FindAccountView.swift in Sources */,
 				5703390D269597DE00CC8AAF /* MemberView.swift in Sources */,
 				570339142696FBB200CC8AAF /* FindPasswordRow.swift in Sources */,
+				57F7CAE2269AF123000B01F0 /* PhoneNumberAuth.swift in Sources */,
 				5799C5922681AD7E00D156E3 /* ContentView.swift in Sources */,
 				5750E5DC268AE51D000B872E /* EdgeBorder.swift in Sources */,
 				5750E5DA268AE1F1000B872E /* TopTabBarView.swift in Sources */,
