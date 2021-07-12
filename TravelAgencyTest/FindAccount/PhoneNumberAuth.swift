@@ -12,6 +12,10 @@ struct PhoneNumberAuth: View {
     @State private var frontNumber: String = ""
     @State private var rearNumber: String = ""
     
+    @State private var selectedTelecom: String = "SKT"
+    
+    private let telecomList = ["알뜰통신사", "U+", "KT", "SKT"]
+    
     var body: some View {
         VStack(alignment: .center) {
             Divider()
@@ -29,9 +33,40 @@ struct PhoneNumberAuth: View {
                 TextField("xxxxxxx", text: $rearNumber)
                     .multilineTextAlignment(.center)
                     .keyboardType(.numberPad)
-                
             } // HStack
             Divider()
+                .padding(.bottom)
+            Divider()
+                .padding(.top)
+            
+            Menu {
+                ForEach(0..<telecomList.count) { index in
+                    Button {
+                        selectedTelecom = telecomList[index]
+                    } label: {
+                        if selectedTelecom == telecomList[index] {
+                            HStack {
+                                Text(telecomList[index])
+                                Spacer()
+                                Image(systemName: "checkmark")
+                            }
+                        } else {
+                            Text(telecomList[index])
+                        }
+                        
+                    }
+
+                }
+            } label: {
+                HStack {
+                    Text(selectedTelecom)
+                    Spacer()
+                    Image(systemName: "chevron.down")
+                }
+            }
+
+            
+            
             
         } // VStack
         .frame(maxWidth: (UIScreen.main.bounds.maxX * 0.8))

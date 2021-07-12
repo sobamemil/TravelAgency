@@ -90,7 +90,7 @@ struct MemberView: View {
             HStack {
                 NavigationLink(destination: FindAccountView(tabIndex: 0)) {
                     Text("아이디 찾기")
-                }
+                }.isDetailLink(false)
 
                 Text("·")
                 

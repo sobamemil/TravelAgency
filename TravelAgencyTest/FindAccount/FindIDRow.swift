@@ -24,6 +24,6 @@ struct FindIDRow: View {
                 Text(textList[index])
                 Spacer()
             }
-        }
+        }//.isDetailLink(false)
     }
 }
