@@ -18,8 +18,7 @@ struct PhoneNumberAuth: View {
     @State private var msgWasSent: Bool = false
     @State private var authNumber: String = ""
         
-    private let telecomList = ["알뜰통신사", "U+", "KT", "SKT"]
-    
+    private let telecomList = ["SKT", "KT", "U+", "알뜰통신사"]
     
     var body: some View {
         ZStack {
@@ -109,6 +108,7 @@ struct PhoneNumberAuth: View {
                     HStack {
                         TextField("인증번호 입력", text: $authNumber)
                             .multilineTextAlignment(.center)
+                            .keyboardType(.numberPad)
                             
                         Button {
                             
