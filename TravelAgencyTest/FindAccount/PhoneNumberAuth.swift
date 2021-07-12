@@ -127,6 +127,7 @@ struct PhoneNumberAuth: View {
             .frame(maxWidth: (UIScreen.main.bounds.maxX * 0.8))
             
             if clickedAuth {
+                Color.gray.opacity(0.8).ignoresSafeArea(.all)
                 AlertView(shown: $clickedAuth, isSuccess: clickedAuth, message: "인증번호가 발송되었습니다.", title: "발송 완료", themeColor: Color.accentColor)
             }
         } // ZStack
