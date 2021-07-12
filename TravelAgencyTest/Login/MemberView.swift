@@ -90,19 +90,20 @@ struct MemberView: View {
             HStack {
                 NavigationLink(destination: FindAccountView(tabIndex: 0)) {
                     Text("아이디 찾기")
-                }.isDetailLink(false)
+                }.isDetailLink(false) // navigationLink가 한 번만 작동하고 먹통되는 것을 방지하기 위해 추가
+                
 
                 Text("·")
                 
                 NavigationLink(destination: FindAccountView(tabIndex: 1)) {
                     Text("비밀번호 찾기")
-                }
+                }.isDetailLink(false) // navigationLink가 한 번만 작동하고 먹통되는 것을 방지하기 위해 추가
                 
                 Text("·")
 
                 NavigationLink(destination: Text("회원가입 화면")) {
                     Text("회원가입")
-                }
+                }.isDetailLink(false) // navigationLink가 한 번만 작동하고 먹통되는 것을 방지하기 위해 추가
             } // HStack
             .font(.system(size: 13))
             .foregroundColor(Color.black)

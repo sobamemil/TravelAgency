@@ -23,7 +23,16 @@ struct PhoneNumberAuth: View {
     
     var body: some View {
         ZStack {
-            VStack(alignment: .center) {
+            VStack(alignment: .leading) {
+                Group {
+                    VStack(alignment: .leading) {
+                            Text("휴대폰 인증")
+                                .font(.system(size: 25, weight: .bold, design: .default))
+                        
+                    } // VStack
+                    .padding(.vertical)
+                }
+                
                 Group {
                     Divider()
                     TextField("홍길동", text: $name)
@@ -72,6 +81,7 @@ struct PhoneNumberAuth: View {
                             Image(systemName: "chevron.down")
                         } // HStack
                         .padding(.horizontal, 5)
+                        .padding(.vertical, 5)
                     }
                     
                     Divider()
@@ -87,7 +97,7 @@ struct PhoneNumberAuth: View {
                                 .foregroundColor(.accentColor)
                                 .overlay(Text("인증하기")
                                             .foregroundColor(.black))
-                                .frame(maxWidth: 90, maxHeight: 40)
+                                .frame(maxWidth: 90, maxHeight: 35)
                             
                         }
                     }
@@ -106,7 +116,7 @@ struct PhoneNumberAuth: View {
                                 .foregroundColor(.accentColor)
                                 .overlay(Text("확인")
                                             .foregroundColor(.black))
-                                .frame(maxWidth: 90, maxHeight: 40)
+                                .frame(maxWidth: 90, maxHeight: 35)
                             
                         }
                     }
@@ -124,7 +134,8 @@ struct PhoneNumberAuth: View {
                         Spacer()
                     }
                 }
-                
+             
+                Spacer()
             } // VStack
             .frame(maxWidth: (UIScreen.main.bounds.maxX * 0.8))
             
@@ -133,6 +144,8 @@ struct PhoneNumberAuth: View {
                 AlertView(shown: $clickedAuth, isSuccess: clickedAuth, message: "인증번호가 발송되었습니다.", title: "발송 완료", themeColor: Color.accentColor)
             }
         } // ZStack
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(leading: CustomBackButton(firstText: "아이디 찾기"))
     }
 }
 
