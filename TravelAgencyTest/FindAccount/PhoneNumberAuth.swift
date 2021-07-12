@@ -88,6 +88,7 @@ struct PhoneNumberAuth: View {
                     
                     HStack {
                         TextField(phoneNumber, text: $phoneNumber)
+                            .keyboardType(.numberPad)
                             .customTextField(padding: 5, lineWidth: 0)
                         Button {
                             clickedAuth = true
@@ -145,7 +146,7 @@ struct PhoneNumberAuth: View {
             }
         } // ZStack
         .navigationBarBackButtonHidden(true)
-        .navigationBarItems(leading: CustomBackButton(firstText: "아이디 찾기"))
+        .navigationBarItems(leading: CustomBackButton(firstText: "휴대폰 인증"))
     }
 }
 
