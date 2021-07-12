@@ -15,6 +15,7 @@ struct PhoneNumberAuth: View {
     @State private var selectedTelecom: String = "SKT"
     @State private var phoneNumber: String = "010"
     @State private var clickedAuth: Bool = false
+    @State private var msgWasSent: Bool = false
     @State private var authNumber: String = ""
         
     private let telecomList = ["알뜰통신사", "U+", "KT", "SKT"]
@@ -80,6 +81,7 @@ struct PhoneNumberAuth: View {
                             .customTextField(padding: 5, lineWidth: 0)
                         Button {
                             clickedAuth = true
+                            msgWasSent = true
                         } label: {
                             RoundedRectangle(cornerRadius: 10)
                                 .foregroundColor(.accentColor)
@@ -112,7 +114,7 @@ struct PhoneNumberAuth: View {
                     Divider()
                     
                     HStack {
-                        if clickedAuth {
+                        if msgWasSent {
                             Text("인증번호가 발송되었습니다.")
                                 .font(.system(size: 12))
                             
