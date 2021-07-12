@@ -131,14 +131,6 @@ struct TextFieldModifier: ViewModifier {
     }
 }
 
-extension View {
-    // Default settings
-    func customTextField(color: Color = .gray, padding: CGFloat = 3, lineWidth: CGFloat = 1.0) -> some View {
-        self.modifier(TextFieldModifier(color: color, padding: padding, lineWidth: lineWidth))
-    }
-}
-///
-
 struct GuestView_Previews: PreviewProvider {
     static var previews: some View {
         GuestView(checkReservationClicked: .constant(false))

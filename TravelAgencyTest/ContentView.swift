@@ -97,7 +97,7 @@ struct ContentView: View {
                      }), trailing: (
                         NavigationLink(destination: LoginView()) {
                          Image(systemName: "person").resizable().frame(width: geometry.size.width / 13, height: geometry.size.height * 2).foregroundColor(.gray).font(.title)
-                     }
+                     } // NavigationLink
                             .isDetailLink(false)
                             .navigationTitle("로그인") // NavigationLink
                      ))

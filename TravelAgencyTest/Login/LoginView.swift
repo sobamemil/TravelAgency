@@ -38,6 +38,8 @@ struct LoginView: View {
                 Color.gray.opacity(0.8).ignoresSafeArea(.all)
                 AlertView(shown: $checkReservationClicked, isSuccess: true, message: "해당 예약 정보가 존재하지 않습니다.", title: "예약 정보 없음", themeColor: .accentColor)
             }
+            
+            Spacer()
         } // ZStack
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading: CustomBackButton())

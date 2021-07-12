@@ -24,6 +24,7 @@
 		5799C5942681AD7F00D156E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5799C5932681AD7F00D156E3 /* Assets.xcassets */; };
 		5799C5972681AD7F00D156E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5799C5962681AD7F00D156E3 /* Preview Assets.xcassets */; };
 		57B335712682AA7E0021E645 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B335702682AA7E0021E645 /* ListView.swift */; };
+		57CA1966269C1DE6009EEE43 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CA1965269C1DE6009EEE43 /* Extension.swift */; };
 		57F7CAE2269AF123000B01F0 /* PhoneNumberAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F7CAE1269AF123000B01F0 /* PhoneNumberAuth.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		5799C5932681AD7F00D156E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5799C5962681AD7F00D156E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		57B335702682AA7E0021E645 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		57CA1965269C1DE6009EEE43 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		57F7CAE1269AF123000B01F0 /* PhoneNumberAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberAuth.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +110,7 @@
 				570339152696FC1700CC8AAF /* FindAccount */,
 				5750E5D2268ADFC7000B872E /* Login */,
 				57197E0A2689AD740017D5CB /* Info.plist */,
+				57CA1965269C1DE6009EEE43 /* Extension.swift */,
 				5799C5912681AD7E00D156E3 /* ContentView.swift */,
 				5799C58F2681AD7E00D156E3 /* TravelAgencyTestApp.swift */,
 				5703618D26846E71009557B3 /* SideMenuView.swift */,
@@ -207,6 +210,7 @@
 				5750E5DC268AE51D000B872E /* EdgeBorder.swift in Sources */,
 				5750E5DA268AE1F1000B872E /* TopTabBarView.swift in Sources */,
 				576C2D4A269421EE00494242 /* AlertView.swift in Sources */,
+				57CA1966269C1DE6009EEE43 /* Extension.swift in Sources */,
 				57B335712682AA7E0021E645 /* ListView.swift in Sources */,
 				5703618E26846E71009557B3 /* SideMenuView.swift in Sources */,
 				5750E5D8268AE0B0000B872E /* TabBarButton.swift in Sources */,
