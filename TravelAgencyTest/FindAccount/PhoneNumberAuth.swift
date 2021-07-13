@@ -80,11 +80,13 @@ struct PhoneNumberAuth: View {
                     } label: {
                         HStack {
                             Text(selectedTelecom)
+                                .foregroundColor(Color.black)
                             Spacer()
                             Image(systemName: "chevron.down")
                         } // HStack
                         .padding(.horizontal, 5)
                         .padding(.vertical, 5)
+                        
                     }
                     
                     Divider()
@@ -96,13 +98,13 @@ struct PhoneNumberAuth: View {
                         Button {
                             clickedAuth = true
                             msgWasSent = true
+                            timeRemaining = 60
                         } label: {
                             RoundedRectangle(cornerRadius: 10)
                                 .foregroundColor(.accentColor)
                                 .overlay(Text("인증하기")
                                             .foregroundColor(.black))
                                 .frame(maxWidth: 90, maxHeight: 35)
-                            
                         }
                     }
                     Divider()
