@@ -17,7 +17,11 @@ struct PhoneNumberAuth: View {
     @State private var clickedAuth: Bool = false
     @State private var msgWasSent: Bool = false
     @State private var authNumber: String = ""
-        
+    
+    @State private var timeRemaining = 60
+    
+    private let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    
     private let telecomList = ["SKT", "KT", "U+", "알뜰통신사"]
     
     var body: some View {
@@ -128,7 +132,12 @@ struct PhoneNumberAuth: View {
                         if msgWasSent {
                             Text("인증번호가 발송되었습니다.")
                                 .font(.system(size: 12))
-                            
+                            Text("\(timeRemaining)")
+                                .onReceive(timer) { timer in
+                                    if timeRemaining > 0 {
+                                        timeRemaining -= 1
+                                    }
+                                }
                         } else {
                             Text("")
                         }
