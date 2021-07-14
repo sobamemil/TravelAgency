@@ -18,7 +18,8 @@ struct PhoneNumberAuth: View {
     @State private var msgWasSent: Bool = false
     @State private var authNumber: String = ""
     
-    @State private var timeRemaining = 60
+    @State private var remaningSec = 59
+    @State private var remaningMin = 2
     
     private let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
@@ -98,7 +99,8 @@ struct PhoneNumberAuth: View {
                         Button {
                             clickedAuth = true
                             msgWasSent = true
-                            timeRemaining = 60
+                            remaningMin = 2
+                            remaningSec = 59
                         } label: {
                             RoundedRectangle(cornerRadius: 10)
                                 .foregroundColor(.accentColor)
@@ -134,10 +136,13 @@ struct PhoneNumberAuth: View {
                         if msgWasSent {
                             Text("인증번호가 발송되었습니다.")
                                 .font(.system(size: 12))
-                            Text("\(timeRemaining)")
+                            Text("0\(remaningMin):\(remaningSec)")
                                 .onReceive(timer) { timer in
-                                    if timeRemaining > 0 {
-                                        timeRemaining -= 1
+                                    if remaningSec > 0 {
+                                        remaningSec -= 1
+                                    } else if remaningSec == 0 && remaningMin != 0 {
+                                        remaningSec = 59
+                                        remaningMin -= 1
                                     }
                                 }
                         } else {
