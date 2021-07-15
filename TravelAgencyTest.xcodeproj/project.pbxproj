@@ -10,7 +10,6 @@
 		5703390D269597DE00CC8AAF /* MemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703390C269597DD00CC8AAF /* MemberView.swift */; };
 		5703390F2695ACCD00CC8AAF /* FindAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703390E2695ACCD00CC8AAF /* FindAccountView.swift */; };
 		570339122696FBA900CC8AAF /* FindIDRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570339112696FBA900CC8AAF /* FindIDRow.swift */; };
-		570339142696FBB200CC8AAF /* FindPasswordRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570339132696FBB200CC8AAF /* FindPasswordRow.swift */; };
 		5703618E26846E71009557B3 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703618D26846E71009557B3 /* SideMenuView.swift */; };
 		5750E5D1268ADD59000B872E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750E5D0268ADD59000B872E /* LoginView.swift */; };
 		5750E5D6268AE000000B872E /* GuestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750E5D5268AE000000B872E /* GuestView.swift */; };
@@ -32,7 +31,6 @@
 		5703390C269597DD00CC8AAF /* MemberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberView.swift; sourceTree = "<group>"; };
 		5703390E2695ACCD00CC8AAF /* FindAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindAccountView.swift; sourceTree = "<group>"; };
 		570339112696FBA900CC8AAF /* FindIDRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindIDRow.swift; sourceTree = "<group>"; };
-		570339132696FBB200CC8AAF /* FindPasswordRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPasswordRow.swift; sourceTree = "<group>"; };
 		5703618D26846E71009557B3 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 		57197E0A2689AD740017D5CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5750E5D0268ADD59000B872E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -68,7 +66,6 @@
 			children = (
 				5703390E2695ACCD00CC8AAF /* FindAccountView.swift */,
 				570339112696FBA900CC8AAF /* FindIDRow.swift */,
-				570339132696FBB200CC8AAF /* FindPasswordRow.swift */,
 				57F7CAE1269AF123000B01F0 /* PhoneNumberAuth.swift */,
 			);
 			path = FindAccount;
@@ -204,7 +201,6 @@
 				5750E5D1268ADD59000B872E /* LoginView.swift in Sources */,
 				5703390F2695ACCD00CC8AAF /* FindAccountView.swift in Sources */,
 				5703390D269597DE00CC8AAF /* MemberView.swift in Sources */,
-				570339142696FBB200CC8AAF /* FindPasswordRow.swift in Sources */,
 				57F7CAE2269AF123000B01F0 /* PhoneNumberAuth.swift in Sources */,
 				5799C5922681AD7E00D156E3 /* ContentView.swift in Sources */,
 				5750E5DC268AE51D000B872E /* EdgeBorder.swift in Sources */,
