@@ -10,6 +10,19 @@ import SwiftUI
 struct SideMenuView: View {
     var body: some View {
         VStack(alignment: .leading) {
+            HStack(spacing: 0) {
+                Circle()
+                    .frame(width: 40, height: 40)
+                    .foregroundColor(.gray)
+                    .padding(.trailing, 10)
+                
+                Text("심찬영")
+                    .font(.system(size: 12))
+                
+                Text("님")
+                    .font(.system(size: 8))
+            }
+            
             HStack {
                 Image(systemName: "person")
                     .foregroundColor(.gray)
