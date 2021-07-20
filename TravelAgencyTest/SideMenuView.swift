@@ -9,57 +9,32 @@ import SwiftUI
 
 struct SideMenuView: View {
     var body: some View {
-        VStack(alignment: .leading) {
-            HStack(spacing: 0) {
-                Circle()
-                    .frame(width: 40, height: 40)
-                    .foregroundColor(.gray)
-                    .padding(.trailing, 10)
-                
-                Text("심찬영")
-                    .font(.system(size: 12))
-                
-                Text("님")
-                    .font(.system(size: 8))
-            }
-            
-            HStack {
-                Image(systemName: "person")
-                    .foregroundColor(.gray)
-                    .imageScale(.large)
-                
-                Text("Profile")
+        ZStack {
+            VStack {
+                HStack(spacing: 0) {
+                    Circle()
+                        .frame(width: 40, height: 40)
                         .foregroundColor(.gray)
-                        .font(.headline)
-            } // HStack
-            .padding(.top, 100)
+                        .padding(.trailing, 10)
+                    
+                    Text("심찬영")
+                        .font(.system(size: 12))
+                    
+                    Text("님")
+                        .font(.system(size: 8))
+                } // HStack
+                
+                Spacer()
+            } // VStack
+            .frame(maxWidth: .infinity, alignment: .leading)
             
-            HStack {
-                Image(systemName: "envelope")
-                    .foregroundColor(.gray)
-                    .imageScale(.large)
-                Text("Messages")
-                    .foregroundColor(.gray)
-                    .font(.headline)
-            } // HStack
-                .padding(.top, 30)
+            VStack {
+                Text("Here")
+            }
+            .offset(x: (UIScreen.main.bounds.width / 2) , y: (UIScreen.main.bounds.height / 4))
+            .background(Color.red)
             
-            HStack {
-                Image(systemName: "gear")
-                    .foregroundColor(.gray)
-                    .imageScale(.large)
-                Text("Settings")
-                    .foregroundColor(.gray)
-                    .font(.headline)
-            } // HStack
-                .padding(.top, 30)
-            Spacer()
-            
-        } // VStack
-        .padding()
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .background(Color.white)
-        .edgesIgnoringSafeArea(.all)
+        } // ZStack
     }
 }
 
