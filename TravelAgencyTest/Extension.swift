@@ -32,3 +32,30 @@ extension View {
     }
 }
 
+extension View {
+    func cornerRadius(_ radius: CGFloat, corners: UIRectCorner) -> some View {
+        clipShape( RoundedCorner(radius: radius, corners: corners) )
+    }
+}
+
+extension Color {
+    static func getThemeColor() -> Color {
+        let red: Double = 154/255
+        let green: Double = 189/255
+        let blue: Double = 199/255
+        let themeColor = Color(red: red, green: green, blue: blue)
+
+        return themeColor
+    }
+}
+
+struct RoundedCorner: Shape {
+
+    var radius: CGFloat = .infinity
+    var corners: UIRectCorner = .allCorners
+
+    func path(in rect: CGRect) -> Path {
+        let path = UIBezierPath(roundedRect: rect, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        return Path(path.cgPath)
+    }
+}

@@ -69,16 +69,21 @@ struct ContentView: View {
                             
                             MyDivider()
                             
+                            
+                            
                             // Spacer()
                         } // VStack
                         .frame(width: geometry.size.width)
                         .offset(x: self.showMenu ? geometry.size.width/2 : 0)
                             .disabled(self.showMenu ? true : false)
-                        
+                         
                         if self.showMenu {
                             SideMenuView()
                                 .frame(width: geometry.size.width/2)
                                 .transition(.move(edge: .leading))
+                            
+                            Color.black.opacity(0.6)
+                                .offset(x: geometry.size.width / 2)
                         }
                     } // ZStack
                      .navigationBarTitleDisplayMode(.inline)
@@ -108,7 +113,7 @@ struct ContentView: View {
             .preferredColorScheme(.light) // dark mode disable
 
         } // NavigationView
-        .accentColor(MemberView(loginClicked: .constant(false)).themeColor)
+        .accentColor(Color.getThemeColor())
     } // view
     
 }

@@ -35,11 +35,6 @@ struct MemberView: View {
     @Binding var loginClicked: Bool
     @State private var message = ""
     
-    static let red: Double = 154/255
-    static let green: Double = 189/255
-    static let blue: Double = 199/255
-    let themeColor = Color(red: red, green: green, blue: blue)
-    
     var body: some View {
         VStack(spacing: 0) {
             TextField("아이디(이메일 계정)", text: $id)
@@ -84,7 +79,7 @@ struct MemberView: View {
                     // .shadow(color: .black, radius: 4, x: 5, y: 5)
             } // Login Button
             .frame(width: (UIScreen.main.bounds.maxX * 0.8), height: (UIScreen.main.bounds.maxY * 0.1) / 5).padding(.vertical)
-            .background(themeColor)
+            .background(Color.getThemeColor())
             .cornerRadius(15)
 
             HStack {

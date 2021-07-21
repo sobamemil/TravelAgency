@@ -76,7 +76,7 @@ struct CustomBackButton: View {
                     Text(secondText)
                 }
             }
-            .foregroundColor(MemberView(loginClicked: .constant(true)).themeColor)
+            .foregroundColor(Color.getThemeColor())
         }
     }
 }

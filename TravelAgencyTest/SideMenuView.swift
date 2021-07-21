@@ -9,32 +9,45 @@ import SwiftUI
 
 struct SideMenuView: View {
     var body: some View {
-        ZStack {
-            VStack {
-                HStack(spacing: 0) {
-                    Circle()
-                        .frame(width: 40, height: 40)
-                        .foregroundColor(.gray)
-                        .padding(.trailing, 10)
-                    
-                    Text("심찬영")
-                        .font(.system(size: 12))
-                    
-                    Text("님")
-                        .font(.system(size: 8))
-                } // HStack
+        VStack(alignment: .leading) {
+            
+            Image(systemName: "chevron.backward")
+                .padding(.leading)
+            HStack(spacing: 0) {
+                Circle()
+                    .frame(width: 40, height: 40)
+                    .foregroundColor(.gray)
+                    .padding(.trailing, 10)
                 
-                Spacer()
-            } // VStack
-            .frame(maxWidth: .infinity, alignment: .leading)
+                Text("심찬영")
+                    .font(.system(size: 12))
+                
+                Text("님")
+                    .font(.system(size: 8))
+            } // HStack
+            .padding()
             
-            VStack {
-                Text("Here")
+            ZStack(alignment: .topLeading) {
+                
+                Color.getThemeColor()
+                    .cornerRadius(20, corners: [.topLeft, .topRight])
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("예약정보")
+                    Divider()
+                    Text("지역별 여행")
+                    Divider()
+                    Text("테마여행")
+                    Divider()
+                    Text("이벤트")
+                    Divider()
+                    Text("이용안내")
+                    Divider()
+                }
+                .padding()
+                .font(.system(size: 12))
             }
-            .offset(x: (UIScreen.main.bounds.width / 2) , y: (UIScreen.main.bounds.height / 4))
-            .background(Color.red)
-            
-        } // ZStack
+        } // VStack
+        .background(Color.white)
     }
 }
 
