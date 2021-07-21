@@ -79,11 +79,11 @@ struct ContentView: View {
                          
                         if self.showMenu {
                             SideMenuView()
-                                .frame(width: geometry.size.width/2)
+                                .frame(width: geometry.size.width * 0.7)
                                 .transition(.move(edge: .leading))
                             
                             Color.black.opacity(0.6)
-                                .offset(x: geometry.size.width / 2)
+                                .offset(x: geometry.size.width * 0.7)
                         }
                     } // ZStack
                      .navigationBarTitleDisplayMode(.inline)
