@@ -33,8 +33,8 @@ struct ContentView: View {
 
         return NavigationView {
              GeometryReader { geometry in
-                 ScrollView {
-                     ZStack(alignment: .leading) {
+                 ZStack(alignment: .leading) {
+                     ScrollView {
                          VStack {
                              //                            HStack {
                              //                                NavigationLink(destination: ListView()) {
@@ -94,38 +94,41 @@ struct ContentView: View {
                          .offset(x: self.showMenu ? geometry.size.width / 2 : 0)
                          .disabled(self.showMenu ? true : false)
                          
-                         if self.showMenu {
-                             SideMenuView()
-                                 .frame(width: geometry.size.width * 0.7)
-                                 .transition(.move(edge: .leading))
-                             
-                             Color.black.opacity(0.6)
-                                 .offset(x: geometry.size.width * 0.7)
-                         }
-                     } // ZStack
-                     .navigationBarTitleDisplayMode(.inline)
-                     .toolbar {
-                         ToolbarItem(placement: .principal) {
-                             Image("koreaTravelAgencyLogo").resizable().frame(width: geometry.size.width / 2, height: geometry.size.height * 0.1, alignment: .center)
-                         }
+                     } // ScrollView
+                     .preferredColorScheme(.light) // dark mode disable
+                         
+                     if self.showMenu {
+                         SideMenuView()
+                             .frame(width: geometry.size.width * 0.7)
+                             .transition(.move(edge: .leading))
+                         
+                         Color.black.opacity(0.6)
+                             .offset(x: geometry.size.width * 0.7)
                      }
-                     .navigationBarItems(leading: (
-                        Button(action: {
-                         withAnimation {
-                             self.showMenu.toggle()
-                         }
-                     }) {
-                         Image(systemName: "line.3.horizontal").foregroundColor(.gray).frame(alignment: .leading).font(.title)
-                     }), trailing: (
-                        NavigationLink(destination: LoginView()) {
-                         Image(systemName: "person").foregroundColor(.gray).font(.title)
-                     } // NavigationLink
-                            .isDetailLink(false)
-                            .navigationTitle("로그인") // NavigationLink
-                     ))
-                     .gesture(drag)
-                 } // ScrollView
-                 .preferredColorScheme(.light) // dark mode disable
+                 } // ZStack
+                 .frame(maxHeight: .infinity)
+                 .ignoresSafeArea(.all, edges: .bottom)
+                 .navigationBarTitleDisplayMode(.inline)
+                 .toolbar {
+                     ToolbarItem(placement: .principal) {
+                         Image("koreaTravelAgencyLogo").resizable().frame(width: geometry.size.width / 2, height: geometry.size.height * 0.1, alignment: .center)
+                     }
+                 }
+                 .navigationBarItems(leading: (
+                    Button(action: {
+                     withAnimation {
+                         self.showMenu.toggle()
+                     }
+                 }) {
+                     Image(systemName: "line.3.horizontal").foregroundColor(.gray).frame(alignment: .leading).font(.title)
+                 }), trailing: (
+                    NavigationLink(destination: LoginView()) {
+                     Image(systemName: "person").foregroundColor(.gray).font(.title)
+                 } // NavigationLink
+                        .isDetailLink(false)
+                        .navigationTitle("로그인") // NavigationLink
+                 ))
+                 .gesture(drag)
             } // GeometryReader
         } // NavigationView
         .accentColor(Color.getThemeColor())

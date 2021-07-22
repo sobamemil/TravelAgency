@@ -48,6 +48,7 @@ struct SideMenuView: View {
             }
         } // VStack
         .background(Color.white)
+        .padding(.top)
     }
 }
 
