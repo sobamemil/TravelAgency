@@ -70,6 +70,7 @@ struct ContentView: View {
                             MyDivider()
                             
                             Section_1()
+                                .padding()
                             
                             MyDivider()
                             
