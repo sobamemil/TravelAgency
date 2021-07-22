@@ -69,7 +69,9 @@ struct ContentView: View {
                             
                             MyDivider()
                             
+                            Section_1()
                             
+                            MyDivider()
                             
                             // Spacer()
                         } // VStack

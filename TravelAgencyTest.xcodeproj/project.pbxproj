@@ -11,6 +11,7 @@
 		5703390F2695ACCD00CC8AAF /* FindAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703390E2695ACCD00CC8AAF /* FindAccountView.swift */; };
 		570339122696FBA900CC8AAF /* FindIDRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570339112696FBA900CC8AAF /* FindIDRow.swift */; };
 		5703618E26846E71009557B3 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703618D26846E71009557B3 /* SideMenuView.swift */; };
+		5709D7A126A9071900B5D752 /* Section_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5709D7A026A9071900B5D752 /* Section_1.swift */; };
 		5750E5D1268ADD59000B872E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750E5D0268ADD59000B872E /* LoginView.swift */; };
 		5750E5D6268AE000000B872E /* GuestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750E5D5268AE000000B872E /* GuestView.swift */; };
 		5750E5D8268AE0B0000B872E /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5750E5D7268AE0B0000B872E /* TabBarButton.swift */; };
@@ -32,6 +33,7 @@
 		5703390E2695ACCD00CC8AAF /* FindAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindAccountView.swift; sourceTree = "<group>"; };
 		570339112696FBA900CC8AAF /* FindIDRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindIDRow.swift; sourceTree = "<group>"; };
 		5703618D26846E71009557B3 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		5709D7A026A9071900B5D752 /* Section_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section_1.swift; sourceTree = "<group>"; };
 		57197E0A2689AD740017D5CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5750E5D0268ADD59000B872E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		5750E5D5268AE000000B872E /* GuestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestView.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				5799C58F2681AD7E00D156E3 /* TravelAgencyTestApp.swift */,
 				5703618D26846E71009557B3 /* SideMenuView.swift */,
 				57B335702682AA7E0021E645 /* ListView.swift */,
+				5709D7A026A9071900B5D752 /* Section_1.swift */,
 				577F942A2681D6A60087678A /* SelectableMenuView.swift */,
 				5799C5932681AD7F00D156E3 /* Assets.xcassets */,
 				5799C5952681AD7F00D156E3 /* Preview Content */,
@@ -210,6 +213,7 @@
 				57B335712682AA7E0021E645 /* ListView.swift in Sources */,
 				5703618E26846E71009557B3 /* SideMenuView.swift in Sources */,
 				5750E5D8268AE0B0000B872E /* TabBarButton.swift in Sources */,
+				5709D7A126A9071900B5D752 /* Section_1.swift in Sources */,
 				5750E5D6268AE000000B872E /* GuestView.swift in Sources */,
 				5799C5902681AD7E00D156E3 /* TravelAgencyTestApp.swift in Sources */,
 				577F942B2681D6A60087678A /* SelectableMenuView.swift in Sources */,
