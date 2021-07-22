@@ -106,7 +106,6 @@ struct ContentView: View {
                              .offset(x: geometry.size.width * 0.7)
                      }
                  } // ZStack
-                 .frame(maxHeight: .infinity)
                  .ignoresSafeArea(.all, edges: .bottom)
                  .navigationBarTitleDisplayMode(.inline)
                  .toolbar {

@@ -47,8 +47,9 @@ struct SideMenuView: View {
                 .font(.system(size: 12))
             }
         } // VStack
-        .background(Color.white)
         .padding(.top)
+        .background(Color.white)
+        
     }
 }
 
