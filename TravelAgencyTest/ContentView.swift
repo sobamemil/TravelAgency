@@ -32,71 +32,85 @@ struct ContentView: View {
             }
 
         return NavigationView {
-            ScrollView {
-                 GeometryReader { geometry in
+             GeometryReader { geometry in
+                 ScrollView {
                      ZStack(alignment: .leading) {
-                        VStack {
-//                            HStack {
-//                                NavigationLink(destination: ListView()) {
-//                                    Image(systemName: "line.3.horizontal").foregroundColor(.gray).frame(alignment: .leading).font(.title)
-//                                } // NavigationLink
-                                
-//                                Button(action: {
-//                                    withAnimation{ self.showMenu = true }  }) {
-//                                    Image(systemName: "line.3.horizontal").foregroundColor(.gray).frame(alignment: .leading).font(.title)
-//                                }
-//                                Spacer()
-//
-//                                Text("코리아여행사").font(.title)
-//                                Spacer()
-//
-//                                NavigationLink(destination: Text("user 화면")) {
-//                                    Image(systemName: "person").foregroundColor(.gray).font(.title)
-//                                } // NavigationLink
-//                            } // HStack
-//                            .padding(.horizontal, 20)
-                            //.padding(.top, 50)
-                            // .background(Color.yellow)
-//                            .navigationBarTitle("메인")
-//                            .navigationBarHidden(self.isNavigationBarHidden)
-//                            .onAppear {
-//                                self.isNavigationBarHidden = true
-//                            }
-                            
-                            Image("koreaTravelAgency").resizable().frame(width: geometry.size.width, height: geometry.size.height * 25)
-                                .padding(.top)
-                            SelectableMenuView()
-                            
-                            MyDivider()
-                            
-                            Section_1()
-                                .padding()
-                            
-                            MyDivider()
-                            
-                            // Spacer()
-                        } // VStack
-                        .frame(width: geometry.size.width)
-                        .offset(x: self.showMenu ? geometry.size.width/2 : 0)
-                            .disabled(self.showMenu ? true : false)
+                         VStack {
+                             //                            HStack {
+                             //                                NavigationLink(destination: ListView()) {
+                             //                                    Image(systemName: "line.3.horizontal").foregroundColor(.gray).frame(alignment: .leading).font(.title)
+                             //                                } // NavigationLink
+                             
+                             //                                Button(action: {
+                             //                                    withAnimation{ self.showMenu = true }  }) {
+                             //                                    Image(systemName: "line.3.horizontal").foregroundColor(.gray).frame(alignment: .leading).font(.title)
+                             //                                }
+                             //                                Spacer()
+                             //
+                             //                                Text("코리아여행사").font(.title)
+                             //                                Spacer()
+                             //
+                             //                                NavigationLink(destination: Text("user 화면")) {
+                             //                                    Image(systemName: "person").foregroundColor(.gray).font(.title)
+                             //                                } // NavigationLink
+                             //                            } // HStack
+                             //                            .padding(.horizontal, 20)
+                             //.padding(.top, 50)
+                             // .background(Color.yellow)
+                             //                            .navigationBarTitle("메인")
+                             //                            .navigationBarHidden(self.isNavigationBarHidden)
+                             //                            .onAppear {
+                             //                                self.isNavigationBarHidden = true
+                             //                            }
+                             
+                             Image("koreaTravelAgency").resizable().frame(width: geometry.size.width, height: geometry.size.height * 0.3)
+                                 .padding(.top)
+                             
+                             SelectableMenuView()
+                             
+                             MyDivider()
+                             
+                             Section_1()
+                                 .padding()
+                             
+                             MyDivider()
+                             
+                             // test
+                             
+                             Section_1()
+                                 .padding()
+                             
+                             MyDivider()
+                             Section_1()
+                                 .padding()
+                             
+                             MyDivider()
+                             
+                             // test
+                             
+                             // Spacer()
+                         } // VStack
+                         .frame(width: geometry.size.width)
+                         .offset(x: self.showMenu ? geometry.size.width / 2 : 0)
+                         .disabled(self.showMenu ? true : false)
                          
-                        if self.showMenu {
-                            SideMenuView()
-                                .frame(width: geometry.size.width * 0.7)
-                                .transition(.move(edge: .leading))
-                            
-                            Color.black.opacity(0.6)
-                                .offset(x: geometry.size.width * 0.7)
-                        }
-                    } // ZStack
+                         if self.showMenu {
+                             SideMenuView()
+                                 .frame(width: geometry.size.width * 0.7)
+                                 .transition(.move(edge: .leading))
+                             
+                             Color.black.opacity(0.6)
+                                 .offset(x: geometry.size.width * 0.7)
+                         }
+                     } // ZStack
                      .navigationBarTitleDisplayMode(.inline)
                      .toolbar {
                          ToolbarItem(placement: .principal) {
-                             Image("koreaTravelAgencyLogo").resizable().frame(width: geometry.size.width / 2, height: geometry.size.height * 5, alignment: .center)
+                             Image("koreaTravelAgencyLogo").resizable().frame(width: geometry.size.width / 2, height: geometry.size.height * 0.1, alignment: .center)
                          }
                      }
                      .navigationBarItems(leading: (
-                         Button(action: {
+                        Button(action: {
                          withAnimation {
                              self.showMenu.toggle()
                          }
@@ -104,17 +118,15 @@ struct ContentView: View {
                          Image(systemName: "line.3.horizontal").foregroundColor(.gray).frame(alignment: .leading).font(.title)
                      }), trailing: (
                         NavigationLink(destination: LoginView()) {
-                         Image(systemName: "person").resizable().frame(width: geometry.size.width / 13, height: geometry.size.height * 2).foregroundColor(.gray).font(.title)
+                         Image(systemName: "person").foregroundColor(.gray).font(.title)
                      } // NavigationLink
                             .isDetailLink(false)
                             .navigationTitle("로그인") // NavigationLink
                      ))
-                    .gesture(drag)
-                } // GeometryReader
-            } // ScrollView
-            //.edgesIgnoringSafeArea(.all)
-            .preferredColorScheme(.light) // dark mode disable
-
+                     .gesture(drag)
+                 } // ScrollView
+                 .preferredColorScheme(.light) // dark mode disable
+            } // GeometryReader
         } // NavigationView
         .accentColor(Color.getThemeColor())
     } // view
