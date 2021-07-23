@@ -18,15 +18,44 @@ struct Section_1: View {
             }
             .font(.system(size: 30))
             
-
-            Image("koreaTravelAgency")
-                .resizable().frame(width: 200, height: 150).padding(.bottom, 3)
-            
-            Text("[원주] 사내투어 + 영화관람")
-                .padding(.vertical)
-            Text("75,000원 ~")
-                .padding(.top)
-                .font(.system(size: 20))
+            ScrollView(.horizontal, showsIndicators: true) {
+                HStack(spacing: 50) {
+                    VStack {
+                        Image("koreaTravelAgency")
+                            .resizable().frame(width: 200, height: 150).padding(.bottom, 3)
+                        
+                        Text("[원주] 사내투어 + 영화관람")
+                            .padding(.vertical)
+                        Text("75,000원 ~")
+                            .padding(.top)
+                            .font(.system(size: 20))
+                    }
+                    
+                    
+                    VStack {
+                        Image("koreaTravelAgency")
+                            .resizable().frame(width: 200, height: 150).padding(.bottom, 3)
+                        
+                        Text("[원주] 사내투어 + 영화관람")
+                            .padding(.vertical)
+                        Text("75,000원 ~")
+                            .padding(.top)
+                            .font(.system(size: 20))
+                    }
+                    
+                    VStack {
+                        Image("koreaTravelAgency")
+                            .resizable().frame(width: 200, height: 150).padding(.bottom, 3)
+                        
+                        Text("[원주] 사내투어 + 영화관람")
+                            .padding(.vertical)
+                        Text("75,000원 ~")
+                            .padding(.top)
+                            .font(.system(size: 20))
+                    }
+                }
+                
+            }
         }
         .frame(maxWidth: UIScreen.main.bounds.maxX * 0.8)
     }
