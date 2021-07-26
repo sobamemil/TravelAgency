@@ -19,7 +19,7 @@ struct Section_1: View {
             .font(.system(size: 30))
             
             ScrollView(.horizontal, showsIndicators: true) {
-                HStack(spacing: 50) {
+                HStack(spacing: 30) {
                     VStack {
                         Image("koreaTravelAgency")
                             .resizable().frame(width: 200, height: 150).padding(.bottom, 3)
@@ -57,7 +57,7 @@ struct Section_1: View {
                 
             }
         }
-        .frame(maxWidth: UIScreen.main.bounds.maxX * 0.8)
+        .frame(maxWidth: UIScreen.main.bounds.maxX - 40)
     }
 }
 
