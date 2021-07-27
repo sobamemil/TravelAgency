@@ -32,7 +32,10 @@ struct SideMenuView: View {
                 Color.getThemeColor()
                     .cornerRadius(20, corners: [.topLeft, .topRight])
                 VStack(alignment: .leading, spacing: 10) {
-                    Text("예약정보")
+                    NavigationLink(destination: (Text("예약정보 View"))) {
+                        Text("예약정보")
+                    }
+
                     Divider()
                     Text("지역별 여행")
                     Divider()
@@ -45,6 +48,7 @@ struct SideMenuView: View {
                 }
                 .padding()
                 .font(.system(size: 12))
+                .foregroundColor(.black)
             }
         } // VStack
         .padding(.top)

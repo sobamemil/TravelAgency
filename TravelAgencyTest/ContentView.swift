@@ -124,8 +124,7 @@ struct ContentView: View {
                     NavigationLink(destination: LoginView()) {
                      Image(systemName: "person").foregroundColor(.gray).font(.title)
                  } // NavigationLink
-                        .isDetailLink(false)
-                        .navigationTitle("로그인") // NavigationLink
+                        .isDetailLink(false) // NavigationLink
                  ))
                  .gesture(drag)
             } // GeometryReader
