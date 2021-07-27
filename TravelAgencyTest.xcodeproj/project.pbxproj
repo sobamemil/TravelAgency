@@ -25,6 +25,8 @@
 		5799C5972681AD7F00D156E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5799C5962681AD7F00D156E3 /* Preview Assets.xcassets */; };
 		57B335712682AA7E0021E645 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B335702682AA7E0021E645 /* ListView.swift */; };
 		57CA1966269C1DE6009EEE43 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CA1965269C1DE6009EEE43 /* Extension.swift */; };
+		57E656B426AFD16100514C8A /* AdobeClean-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57E656B326AFD16100514C8A /* AdobeClean-Bold.ttf */; };
+		57E656B626AFD40700514C8A /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 57E656B526AFD40700514C8A /* NotoSansKR-Bold.otf */; };
 		57F7CAE2269AF123000B01F0 /* PhoneNumberAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F7CAE1269AF123000B01F0 /* PhoneNumberAuth.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +51,8 @@
 		5799C5962681AD7F00D156E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		57B335702682AA7E0021E645 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		57CA1965269C1DE6009EEE43 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		57E656B326AFD16100514C8A /* AdobeClean-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AdobeClean-Bold.ttf"; sourceTree = "<group>"; };
+		57E656B526AFD40700514C8A /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
 		57F7CAE1269AF123000B01F0 /* PhoneNumberAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberAuth.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +110,7 @@
 		5799C58E2681AD7E00D156E3 /* TravelAgencyTest */ = {
 			isa = PBXGroup;
 			children = (
+				57E656B026AFCE3F00514C8A /* CustomFont */,
 				570339152696FC1700CC8AAF /* FindAccount */,
 				5750E5D2268ADFC7000B872E /* Login */,
 				57197E0A2689AD740017D5CB /* Info.plist */,
@@ -128,6 +133,15 @@
 				5799C5962681AD7F00D156E3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		57E656B026AFCE3F00514C8A /* CustomFont */ = {
+			isa = PBXGroup;
+			children = (
+				57E656B326AFD16100514C8A /* AdobeClean-Bold.ttf */,
+				57E656B526AFD40700514C8A /* NotoSansKR-Bold.otf */,
+			);
+			path = CustomFont;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +204,8 @@
 			files = (
 				5799C5972681AD7F00D156E3 /* Preview Assets.xcassets in Resources */,
 				5799C5942681AD7F00D156E3 /* Assets.xcassets in Resources */,
+				57E656B426AFD16100514C8A /* AdobeClean-Bold.ttf in Resources */,
+				57E656B626AFD40700514C8A /* NotoSansKR-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
