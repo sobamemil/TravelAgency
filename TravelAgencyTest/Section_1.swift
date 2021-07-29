@@ -21,42 +21,22 @@ struct Section_1: View {
             
             ScrollView(.horizontal, showsIndicators: true) {
                 HStack(spacing: 30) {
-                    VStack(alignment: .leading) {
-                        Image("koreaTravelAgency")
-                            .resizable().frame(width: 200, height: 150).padding(.bottom, 3)
-                        
-                        Text("[원주] 사내투어 + 영화관람")
-                            .padding(.vertical)
+                    
+                    ForEach(0..<5) { _ in
+                        VStack(alignment: .leading) {
+                            Image("koreaTravelAgency")
+                                .resizable().frame(width: 200, height: 150).padding(.bottom, 3)
                             
-                        Text("75,000 Won ~")
-                            .padding(.top)
-                            .font(Font.custom("AdobeClean-Bold", size: 20))
+                            Text("[원주] 사내투어 + 영화관람")
+                                .padding(.vertical)
+                                
+                            Text("75,000 Won ~")
+                                .padding(.top)
+                                .font(Font.custom("AdobeClean-Bold", size: 20))
+                        }
+                        .font(Font.custom("NotoSansKR-Bold", size: 15))
                     }
-                    .font(Font.custom("NotoSansKR-Bold", size: 15))
                     
-                    VStack {
-                        Image("koreaTravelAgency")
-                            .resizable().frame(width: 200, height: 150).padding(.bottom, 3)
-                        
-                        Text("[원주] 사내투어 + 영화관람")
-                            .padding(.vertical)
-                        Text("75,000 Won ~")
-                            .padding(.top)
-                            .font(Font.custom("AdobeClean-Bold", size: 20))
-                    }
-                    .font(Font.custom("NotoSansKR-Bold", size: 15))
-                    
-                    VStack {
-                        Image("koreaTravelAgency")
-                            .resizable().frame(width: 200, height: 150).padding(.bottom, 3)
-                        
-                        Text("[원주] 사내투어 + 영화관람")
-                            .padding(.vertical)
-                        Text("75,000 Won ~")
-                            .padding(.top)
-                            .font(Font.custom("AdobeClean-Bold", size: 20))
-                    }
-                    .font(Font.custom("NotoSansKR-Bold", size: 15))
                 } // HStack
             } // ScrollView
         } // VStack
