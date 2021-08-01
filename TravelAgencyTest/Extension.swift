@@ -40,9 +40,9 @@ extension View {
 
 extension Color {
     static func getThemeColor() -> Color {
-        let red: Double = 154/255
-        let green: Double = 189/255
-        let blue: Double = 199/255
+        let red: Double = 209/255
+        let green: Double = 219/255
+        let blue: Double = 222/255
         let themeColor = Color(red: red, green: green, blue: blue)
 
         return themeColor

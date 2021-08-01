@@ -110,7 +110,7 @@ struct ContentView: View {
                  .navigationBarTitleDisplayMode(.inline)
                  .toolbar {
                      ToolbarItem(placement: .principal) {
-                         Image("koreaTravelAgencyLogo").resizable().frame(width: geometry.size.width / 2, height: geometry.size.height * 0.1, alignment: .center)
+                         Image("koreaTravelAgencyLogo").resizable().frame(width: geometry.size.width / 2, height: geometry.size.height * 0.075, alignment: .center)
                      }
                  }
                  .navigationBarItems(leading: (

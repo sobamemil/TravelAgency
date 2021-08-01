@@ -11,5 +11,14 @@
 		<string>NotoSansKR-Bold.otf</string>
 		<string>AdobeClean-Bold.ttf</string>
 	</array>
+	<key>UILaunchScreen</key>
+	<dict>
+		<key>UIImageName</key>
+		<string>launchImage</string>
+		<key>UIImageRespectsSafeAreaInsets</key>
+		<false/>
+		<key>UILaunchScreen</key>
+		<dict/>
+	</dict>
 </dict>
 </plist>
