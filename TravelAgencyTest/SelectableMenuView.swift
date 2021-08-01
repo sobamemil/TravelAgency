@@ -27,13 +27,13 @@ struct SelectableMenuView: View {
         VStack {
             HStack {
                 Spacer()
-                MenuCreate(image: "emergency", name: "긴급모객")
+                MenuCreate(image: "emergency2", name: "긴급모객")
                 Spacer()
-                MenuCreate(image: "globe", name: "국외")
+                MenuCreate(image: "globe2", name: "국외")
                 Spacer()
-                MenuCreate(image: "koreaMap", name: "국내")
+                MenuCreate(image: "koreaMap3", name: "국내")
                 Spacer()
-                MenuCreate(image: "bus", name: "전세버스")
+                MenuCreate(image: "bus2", name: "전세버스")
                 Spacer()
                 
             } // HStack
@@ -41,13 +41,13 @@ struct SelectableMenuView: View {
             
             HStack {
                 Spacer()
-                MenuCreate(image: "airplane", name: "항공")
+                MenuCreate(image: "airplane2", name: "항공")
                 Spacer()
-                MenuCreate(image: "golf", name: "골프")
+                MenuCreate(image: "golf2", name: "골프")
                 Spacer()
-                MenuCreate(image: "visa", name: "비자")
+                MenuCreate(image: "visa2", name: "비자")
                 Spacer()
-                MenuCreate(image: "customTravel", name: "맞춤여행")
+                MenuCreate(image: "customTravel2", name: "맞춤여행")
                 Spacer()
                 
             } // HStack
