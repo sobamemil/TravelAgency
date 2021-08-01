@@ -20,17 +20,20 @@ struct Section_1: View {
             .font(.system(size: 23))
             
             ScrollView(.horizontal, showsIndicators: true) {
-                HStack(spacing: 30) {
+                HStack(spacing: 25) {
                     
                     ForEach(0..<5) { _ in
                         VStack(alignment: .leading) {
-                            Image("koreaTravelAgency")
-                                .resizable().frame(width: 200, height: 150).padding(.bottom, 3)
+                            Image("jeju")
+                                .resizable().frame(width: 200, height: 150)
+                                .cornerRadius(7)
+                                .clipped()
+                                
                             
-                            Text("[원주] 사내투어 + 영화관람")
+                            Text("[제주] 노을투어 + 딱새우")
                                 .padding(.vertical)
                                 
-                            Text("75,000 Won ~")
+                            Text("175,000 Won ~")
                                 .padding(.top)
                                 .font(Font.custom("AdobeClean-Bold", size: 20))
                         }

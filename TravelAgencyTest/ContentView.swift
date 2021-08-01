@@ -63,7 +63,7 @@ struct ContentView: View {
                              //                                self.isNavigationBarHidden = true
                              //                            }
                              
-                             Image("koreaTravelAgency").resizable().frame(width: geometry.size.width, height: geometry.size.height * 0.3)
+                             Image("shang").resizable().frame(width: geometry.size.width, height: geometry.size.height * 0.3)
                                  .padding(.top)
                              
                              SelectableMenuView()

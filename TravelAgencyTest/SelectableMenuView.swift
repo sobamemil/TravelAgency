@@ -13,7 +13,7 @@ struct MenuCreate: View {
     // 132 x 155
     var body: some View {
         VStack {
-            Image(image).resizable().frame(width: 39, height: 45).padding(.bottom, 3)
+            Image(image).resizable().frame(width: 26, height: 30).padding(.bottom, 3)
 //            Image(systemName: image).resizable().frame(width: 30, height: 30).padding(.bottom, 5)
             Text(name).font(.system(size: 15))
         } // VStack
@@ -37,6 +37,7 @@ struct SelectableMenuView: View {
                 Spacer()
                 
             } // HStack
+            .frame(maxHeight: 90)
             
             HStack {
                 Spacer()
@@ -50,6 +51,7 @@ struct SelectableMenuView: View {
                 Spacer()
                 
             } // HStack
+            .frame(maxHeight: 90)
 
         } // VStack
     }
