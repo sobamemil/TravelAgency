@@ -29,7 +29,7 @@ struct SelectableMenuView: View {
                 Spacer()
                 MenuCreate(image: "emergency2", name: "긴급모객")
                 Spacer()
-                MenuCreate(image: "globe2", name: "국외")
+                MenuCreate(image: "globe3", name: "국외")
                 Spacer()
                 MenuCreate(image: "koreaMap3", name: "국내")
                 Spacer()
