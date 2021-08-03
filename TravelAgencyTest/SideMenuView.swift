@@ -47,7 +47,7 @@ struct SideMenuView: View {
                     Divider()
                 }
                 .padding()
-                .font(.system(size: 12))
+                .font(.system(size: 15))
                 .foregroundColor(.black)
             }
         } // VStack
