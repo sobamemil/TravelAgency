@@ -36,33 +36,6 @@ struct ContentView: View {
                  ZStack(alignment: .leading) {
                      ScrollView {
                          VStack {
-                             //                            HStack {
-                             //                                NavigationLink(destination: ListView()) {
-                             //                                    Image(systemName: "line.3.horizontal").foregroundColor(.gray).frame(alignment: .leading).font(.title)
-                             //                                } // NavigationLink
-                             
-                             //                                Button(action: {
-                             //                                    withAnimation{ self.showMenu = true }  }) {
-                             //                                    Image(systemName: "line.3.horizontal").foregroundColor(.gray).frame(alignment: .leading).font(.title)
-                             //                                }
-                             //                                Spacer()
-                             //
-                             //                                Text("코리아여행사").font(.title)
-                             //                                Spacer()
-                             //
-                             //                                NavigationLink(destination: Text("user 화면")) {
-                             //                                    Image(systemName: "person").foregroundColor(.gray).font(.title)
-                             //                                } // NavigationLink
-                             //                            } // HStack
-                             //                            .padding(.horizontal, 20)
-                             //.padding(.top, 50)
-                             // .background(Color.yellow)
-                             //                            .navigationBarTitle("메인")
-                             //                            .navigationBarHidden(self.isNavigationBarHidden)
-                             //                            .onAppear {
-                             //                                self.isNavigationBarHidden = true
-                             //                            }
-                             
                              Image("shang").resizable().frame(width: geometry.size.width, height: geometry.size.height * 0.3)
                                  .padding(.top)
                              
@@ -74,9 +47,7 @@ struct ContentView: View {
                                  .padding()
                              
                              MyDivider()
-                             
-                             // test
-                             
+                                                          
                              Section_1()
                                  .padding()
                              
@@ -85,10 +56,7 @@ struct ContentView: View {
                                  .padding()
                              
                              MyDivider()
-                             
-                             // test
-                             
-                             // Spacer()
+                                                          
                          } // VStack
                          .frame(width: geometry.size.width)
                          .offset(x: self.showMenu ? geometry.size.width / 2 : 0)
@@ -105,6 +73,7 @@ struct ContentView: View {
                          Color.black.opacity(0.6)
                              .offset(x: geometry.size.width * 0.7)
                      }
+                     
                  } // ZStack
                  .ignoresSafeArea(.all, edges: .bottom)
                  .navigationBarTitleDisplayMode(.inline)
