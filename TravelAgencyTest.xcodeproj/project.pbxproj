@@ -24,6 +24,7 @@
 		5799C5942681AD7F00D156E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5799C5932681AD7F00D156E3 /* Assets.xcassets */; };
 		5799C5972681AD7F00D156E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5799C5962681AD7F00D156E3 /* Preview Assets.xcassets */; };
 		57B335712682AA7E0021E645 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B335702682AA7E0021E645 /* ListView.swift */; };
+		57B60E1226BA4C0B001A951E /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B60E1126BA4C0B001A951E /* ProductDetailView.swift */; };
 		57CA1966269C1DE6009EEE43 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CA1965269C1DE6009EEE43 /* Extension.swift */; };
 		57E656B426AFD16100514C8A /* AdobeClean-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57E656B326AFD16100514C8A /* AdobeClean-Bold.ttf */; };
 		57E656B626AFD40700514C8A /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 57E656B526AFD40700514C8A /* NotoSansKR-Bold.otf */; };
@@ -50,6 +51,7 @@
 		5799C5932681AD7F00D156E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5799C5962681AD7F00D156E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		57B335702682AA7E0021E645 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		57B60E1126BA4C0B001A951E /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		57CA1965269C1DE6009EEE43 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		57E656B326AFD16100514C8A /* AdobeClean-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AdobeClean-Bold.ttf"; sourceTree = "<group>"; };
 		57E656B526AFD40700514C8A /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				57B335702682AA7E0021E645 /* ListView.swift */,
 				5709D7A026A9071900B5D752 /* Section_1.swift */,
 				577F942A2681D6A60087678A /* SelectableMenuView.swift */,
+				57B60E1126BA4C0B001A951E /* ProductDetailView.swift */,
 				5799C5932681AD7F00D156E3 /* Assets.xcassets */,
 				5799C5952681AD7F00D156E3 /* Preview Content */,
 			);
@@ -233,6 +236,7 @@
 				5750E5D6268AE000000B872E /* GuestView.swift in Sources */,
 				5799C5902681AD7E00D156E3 /* TravelAgencyTestApp.swift in Sources */,
 				577F942B2681D6A60087678A /* SelectableMenuView.swift in Sources */,
+				57B60E1226BA4C0B001A951E /* ProductDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
