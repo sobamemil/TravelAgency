@@ -23,21 +23,24 @@ struct Section_1: View {
                 HStack(spacing: 25) {
                     
                     ForEach(0..<5) { _ in
-                        VStack(alignment: .leading) {
-                            Image("jeju")
-                                .resizable().frame(width: 200, height: 150)
-                                .cornerRadius(7)
-                                .clipped()
+                        NavigationLink(destination: ProductDetailView()) {
+                            VStack(alignment: .leading) {
+                                Image("jeju")
+                                    .resizable().frame(width: 200, height: 150)
+                                    .cornerRadius(7)
+                                    .clipped()
+                                    
                                 
-                            
-                            Text("[제주] 노을투어 + 딱새우")
-                                .padding(.vertical)
-                                
-                            Text("175,000 Won ~")
-                                .padding(.top)
-                                .font(Font.custom("AdobeClean-Bold", size: 20))
+                                Text("[제주] 노을투어 + 딱새우")
+                                    .padding(.vertical)
+                                    
+                                Text("175,000 Won ~")
+                                    .padding(.top)
+                                    .font(Font.custom("AdobeClean-Bold", size: 20))
+                            }
+                            .font(Font.custom("NotoSansKR-Bold", size: 15))
+                            .foregroundColor(.black)
                         }
-                        .font(Font.custom("NotoSansKR-Bold", size: 15))
                     }
                     
                 } // HStack
