@@ -15,6 +15,7 @@ struct ProductDetailView: View {
             Image("jeju")
                 .resizable()
                 .frame(height: 200)
+                .padding(.top)
             
             VStack(alignment: .leading) {
                 HStack {
