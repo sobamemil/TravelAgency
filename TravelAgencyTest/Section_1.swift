@@ -40,7 +40,8 @@ struct Section_1: View {
                             }
                             .font(Font.custom("NotoSansKR-Bold", size: 15))
                             .foregroundColor(.black)
-                        }
+                        } // navigationLink
+                        .navigationTitle("상품")
                     }
                     
                 } // HStack
