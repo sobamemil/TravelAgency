@@ -13,6 +13,8 @@ struct ProductDetailView: View {
     var body: some View {
         VStack {
             Image("jeju")
+                .resizable()
+                .frame(height: 200)
             
             VStack(alignment: .leading) {
                 HStack {
@@ -25,6 +27,8 @@ struct ProductDetailView: View {
                 
                 DatePicker("출발일", selection: $date, displayedComponents: .date)
             }
+            .frame(maxWidth: UIScreen.main.bounds.maxX - 40)
+            Spacer()
             
         }
     }
