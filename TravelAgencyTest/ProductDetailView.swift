@@ -36,8 +36,11 @@ struct ProductDetailView: View {
                             RoundedRectangle(cornerRadius: 15)
                                 .stroke(.orange, lineWidth: 1)
                         )
-                }
+                } // HStack
+                .font(.system(size: 12))
                 .padding(.top)
+                
+                
                 Text("[KE7박8일] 아름다운 절경, 제주 해변 투어, 특가 상품!!")
                     .font(Font.custom("NotoSansKR-Bold", size: 23))
                 
