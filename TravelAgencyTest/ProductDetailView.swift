@@ -45,6 +45,7 @@ struct ProductDetailView: View {
                     .font(Font.custom("NotoSansKR-Bold", size: 23))
                 
                 DatePicker("출발일", selection: $date, in: Date()..., displayedComponents: .date)
+                    .environment(\.locale, Locale.init(identifier: "ko_KR"))
                 
                 Text("가격문의")
             } // VStack
