@@ -19,10 +19,6 @@ struct ContentView: View {
     init() {
         UITableViewCell.appearance().backgroundColor = .clear
         UITableView.appearance().backgroundColor = .clear
-        
-        UIDatePicker.appearance().backgroundColor = UIColor.init(.getThemeColor()) // changes bg color
-        UIDatePicker.appearance().tintColor = UIColor.init(.gray) // changes font color
-
     }
     
    
