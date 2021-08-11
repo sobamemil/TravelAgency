@@ -44,7 +44,8 @@ struct ProductDetailView: View {
                 Text("[KE7박8일] 아름다운 절경, 제주 해변 투어, 특가 상품!!")
                     .font(Font.custom("NotoSansKR-Bold", size: 23))
                 
-                DatePicker("출발일", selection: $date, displayedComponents: .date)
+                DatePicker("출발일", selection: $date, in: Date()..., displayedComponents: .date)
+                    .datePickerStyle(.wheel)
                 
                 Text("가격문의")
             } // VStack
