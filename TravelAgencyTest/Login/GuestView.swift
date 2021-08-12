@@ -50,16 +50,16 @@ struct GuestView: View {
                 .customTextField(padding: 10)
                 .frame(maxWidth: (UIScreen.main.bounds.maxX * 0.8) )
                 .frame(height: (UIScreen.main.bounds.maxY * 0.1) / 2 )
-                .padding(.bottom, 10)
+                .padding(.bottom, 20)
                 
             TextField("예약번호(영문, 숫자 포함 12자리)", text: $reservationNumber)
                 .customTextField(padding: 10)
                 .frame(maxWidth: (UIScreen.main.bounds.maxX * 0.8) )
                 .frame(height: (UIScreen.main.bounds.maxY * 0.1) / 2 )
-                .padding(.bottom, 10)
+                .padding(.bottom, 20)
             
             HStack {
-                TextField("연락처", text: $phoneNumber)
+                TextField("연락처", text: .constant("연락처"))
                     .customTextField(padding: 10)
                     .frame(maxWidth: (UIScreen.main.bounds.maxX * 0.16) )
                     .frame(height: (UIScreen.main.bounds.maxY * 0.1) / 2)
