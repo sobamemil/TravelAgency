@@ -23,7 +23,7 @@ struct Section_1: View {
                 HStack(spacing: 25) {
                     
                     ForEach(0..<5) { _ in
-                        NavigationLink(destination: ProductDetailView(price: 0)) {
+                        NavigationLink(destination: ProductDetailView(price: 0, reservationClicked: false)) {
                             VStack(alignment: .leading) {
                                 Image("jeju")
                                     .resizable().frame(width: 200, height: 150)
