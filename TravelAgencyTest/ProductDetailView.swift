@@ -73,23 +73,34 @@ struct ProductDetailView: View {
                     .padding(.vertical)
                     
                     VStack(alignment: .leading) {
-                        Text("항공 정보")
+                        NavigationLink(destination: Text("항공 정보 화면")) {
+                            Text("항공 정보")
+                        }
+                        
                         Divider()
                             .padding(.bottom)
                         
-                        Text("호텔 정보")
+                        NavigationLink(destination: Text("호텔 정보 화면")) {
+                            Text("호텔 정보")
+                        }
                         Divider()
                             .padding(.bottom)
                         
-                        Text("여행 일정")
+                        NavigationLink(destination: Text("여행 일정 화면")) {
+                            Text("여행 일정")
+                        }
                         Divider()
                             .padding(.bottom)
                         
-                        Text("옵션")
+                        NavigationLink(destination: Text("옵션 화면")) {
+                            Text("옵션")
+                        }
                         Divider()
                             .padding(.bottom)
                         
-                        Text("여행 약관")
+                        NavigationLink(destination: Text("여행 약관 화면")) {
+                            Text("여행 약관")
+                        }
                         Divider()
                             .padding(.bottom)
                     }
@@ -100,14 +111,14 @@ struct ProductDetailView: View {
                     Spacer()
                     
                 } // VStack
+                .foregroundColor(.black)
+                
             } // ScrollView
             
             if reservationClicked {
                 Color.gray.opacity(0.8).ignoresSafeArea(.all)
                 AlertView(shown: $reservationClicked, isSuccess: true, message: "예약에 실패하였습니다.\n유선 연락 바랍니다.", title: "예약 실패", themeColor: .accentColor)
-                    
             }
-
         } // ZStack
     }
 }
