@@ -37,13 +37,21 @@ struct SideMenuView: View {
                     }
 
                     Divider()
-                    Text("지역별 여행")
+                    NavigationLink(destination: (Text("지역별 여행 View"))) {
+                        Text("지역별여행")
+                    }
                     Divider()
-                    Text("테마여행")
+                    NavigationLink(destination: (Text("테마여행 View"))) {
+                        Text("테마여행")
+                    }
                     Divider()
-                    Text("이벤트")
+                    NavigationLink(destination: (Text("이벤트 View"))) {
+                        Text("이벤트")
+                    }
                     Divider()
-                    Text("이용안내")
+                    NavigationLink(destination: (Text("이용안내 View"))) {
+                        Text("이용안내")
+                    }
                     Divider()
                 }
                 .padding()
